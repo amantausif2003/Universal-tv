@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Universal TV Remote</string>
+    <string name="android_tv">Android TV</string>
+    <string name="allow_permission">Allow Permission</string>
+    <string name="setting">Settings</string>
+    <string name="touchpad_second">touch</string>
+    <string name="dpad">dp</string>
+    <string name="bug_report">bug</string>
+    <string name="help">help</string>
+    <string name="feedback">feedback</string>
+    <string name="about">about</string>
+    <string name="manage">manage</string>
+    <string name="search_bluetoothOff">If your Android TV is not connected to any Wi‑Fi, turn on this device\'s Bluetooth.</string>
+    <string name="search_internet">Ethernet</string>
+    <string name="search_bluetooth">Searching for Android TV via Bluetooth…</string>
+    <string name="search_network">Searching for Android TV on</string>
+    <string name="search_Both">and Bluetooth</string>
+    <string name="search_unknown">Unknown Network</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="refresh">Refresh</string>
+    <string name="enable">Turn on Wifi</string>
+    <string name="con_wf">Connect to Wifi</string>
+    <string name="no_network" translatable="false">No network</string>
+    <string name="step" translatable="false">1.  Go to <b>Settings on your Android TV</b> \n2. Select <b>Apps</b> \n3. Select <b>Android TV Remote Service</b> \n4. Select <b>Uninstall Update"</b></string>
+    <string name="don_t_show_again">Don\'t show again</string>
+    <string name="ir_remotes_for_all_tv">IR Remotes For All TV</string>
+    <!--for ir remote strings-->
+    <string name="tv_remote">Tv Remote</string>
+    <string name="sound_controls">Sound Controls</string>
+    <string name="off">Off</string>
+    <string name="menu">TV Setting</string>
+    <string name="mute">Mute</string>
+    <string name="home">Menu - Exit</string>
+    <string name="ch">CH</string>
+    <string name="vol">VOL</string>
+    <string name="ok">OK</string>
+    <string name="samsung_tv" translatable="false">Samsung TV</string>
+    <string name="samsung">Samsung</string>
+    <string name="other">Other</string>
+    <string name="sony">Sony</string>
+    <string name="jvc" translatable="false">JVC</string>
+    <string name="toshiba">Toshiba</string>
+    <string name="hitachi">Hitachi</string>
+    <string name="zenith" translatable="false">Zenith</string>
+    <string name="haire" translatable="false">Haier</string>
+    <string name="lg" translatable="false">LG</string>
+    <string name="mitsubishi" translatable="false">Mitsubishi</string>
+    <string name="philips" translatable="false">Philips</string>
+    <string name="insignia" translatable="false">Insignia</string>
+    <string name="panasonic" translatable="false">Panasonic</string>
+    <string name="tcl" translatable="false">Roku (TCL + Hisense)</string>
+    <string name="search_tv">Search TV</string>
+    <string name="universal_tv_remote">Universal TV Remote</string>
+    <string name="disconnect_tv">Disconnect TV</string>
+    <string name="available_smart_devices">Available Smart Devices</string>
+    <string name="try_to_connect_with_bluetooth_your_tv_and_mobile_should_be_connected_to_same_wifi">Try to connect with Bluetooth. Your tv and mobile should be connected to same wifi</string>
+    <string name="enter_the_text">Enter the text</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_us">Rate us</string>
+    <string name="more_apps">More Apps</string>
+    <string name="pair_your_tv">Pair your TV</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="cancel">Cancel</string>
+    <string name="pair">Pair</string>
+    <string name="connectivity_issue_solution">Connectivity Issue Solution</string>
+    <string name="android_tv_remote_service_app_in_android_tvs_was_recently_updated_by_google_due_to_this_new_update_the_tv_remote_apps_are_experiencing_issues">Android TV Remote Service app in Android TVs was recently updated by Google. Due to this new update the TV remote apps are experiencing issues.</string>
+    <string name="to_resolve_connectivity_issues_on_android_tvs_please_follow_these_steps">To resolve connectivity issues on Android TVs, Please follow these steps</string>
+    <string name="android_tv_remote_will_start_working_feel_free_to_contact_us">Android TV Remote will start working. Feel free to contact us.</string>
+    <string name="roku_tv">Roku TV</string>
+    <string name="ring_remote">Ring Remote</string>
+    <string name="apps">APPS</string>
+    <string name="click_any_key_on_remote_to_stop_ringing">Click any key on remote to stop ringing</string>
+    <string name="available_roku_tv">Available Roku TV</string>
+    <string name="searching_for_devices_on">Searching for devices on</string>
+    <string name="your_roku_tv_and_mobile_should_be_connected_to_same_wifi">Your Roku tv and mobile should be connected to same wifi</string>
+    <string name="arabic" translatable="false">Arabic</string>
+    <string name="english" translatable="false">English</string>
+    <string name="french" translatable="false">French</string>
+    <string name="rus" translatable="false">Russian</string>
+    <string name="Español" translatable="false">Espanol</string>
+    <string name="ukr" translatable="false">Ukrainian</string>
+    <string name="azer" translatable="false">Azerbaijani</string>
+    <string name="ben" translatable="false">Bengali</string>
+    <string name="Bulg" translatable="false">Bulgarian</string>
+    <string name="chinese" translatable="false">Chinese</string>
+    <string name="czech" translatable="false">Czech</string>
+    <string name="danish" translatable="false">Danish</string>
+    <string name="dutch" translatable="false">Dutch</string>
+    <string name="german" translatable="false">German</string>
+    <string name="geor" translatable="false">Georgian</string>
+    <string name="hindi" translatable="false">Hindi</string>
+    <string name="hebr" translatable="false">Hebrew</string>
+    <string name="hung" translatable="false">Hungarian</string>
+    <string name="italian" translatable="false">Italian</string>
+    <string name="indonesian" translatable="false">Indonesian</string>
+    <string name="korean" translatable="false">Korean</string>
+    <string name="japanese" translatable="false">Japanese</string>
+    <string name="pers" translatable="false">Persian</string>
+    <string name="malay" translatable="false">Malay</string>
+    <string name="portuguese" translatable="false">Portuguese</string>
+    <string name="polish" translatable="false">Polish</string>
+    <string name="thai" translatable="false">Thai</string>
+    <string name="turkish" translatable="false">Turkish</string>
+    <string name="urdu" translatable="false">Urdu</string>
+    <string name="uzbek" translatable="false">Uzbek</string>
+    <string name="vietnamese" translatable="false">Vietnamese</string>
+    <string name="choose">choose</string>
+    <string name="android">Android</string>
+    <string name="lg_tv">LG TV</string>
+    <string name="ir_doesn_t_exist_in_your_device">IR doesn\'t exist in your Device.</string>
+    <string name="ir">IR</string>
+    <string name="go_back">Stay here</string>
+    <string name="ad_is_loading" translatable="false">Ad is Loading</string>
+    <string name="check_internet" translatable="false">Plz check your Internet Connection!</string>
+</resources>

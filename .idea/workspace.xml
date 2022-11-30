@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="myInterstitialAds" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98523c0e-5a26-430f-9df3-0da79877d9af" name="Default Changelist" comment="set original ads an d loader in app. and also set banner ad on Tv_list activity." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\raheel\.android\avd\Pixel_4_API_32_1.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Universal TV Remote" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Universal TV Remote" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Universal TV Remote" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="D:\office_app\Universal tv\app\jks\remoter-keystore.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="230pdwWoHwcLEuLnp6fYgQqkTEl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="BundleExportedModule" value="Universal_TV_Remote.app" />
+    <property name="ExportApk.ApkPath" value="D:\office_app\Universal tv\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/Aamir/AndroidStudioProjects/Universal tv/app/src/main/java/com/remote/control/allsmarttv/Utils/SpeechUtil.java_SELECTED" value="SpeechUtil" />
+    <property name="android-custom-viewC:/Users/Aamir/AndroidStudioProjects/Universal tv/app/src/main/java/com/remote/control/allsmarttv/Utils/SpeechUtil.java_SpeechUtil_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Aamir/AndroidStudioProjects/Universal tv/app/src/main/java/com/remote/control/allsmarttv/Utils/TvDrawer.java_SELECTED" value="TvDrawer" />
+    <property name="android-custom-viewC:/Users/Aamir/AndroidStudioProjects/Universal tv/app/src/main/java/com/remote/control/allsmarttv/Utils/TvDrawer.java_TvDrawer_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Aamir/AndroidStudioProjects/Universal tv/app/src/main/java/com/remote/control/allsmarttv/Utils/lg_touchpad.java_SELECTED" value="lg_touchpad" />
+    <property name="android-custom-viewC:/Users/Aamir/AndroidStudioProjects/Universal tv/app/src/main/java/com/remote/control/allsmarttv/Utils/lg_touchpad.java_lg_touchpad_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/ImeClass.java_ImeClass_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/ImeClass.java_SELECTED" value="ImeClass" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/RemoteDrawer.java_RemoteDrawer_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/RemoteDrawer.java_SELECTED" value="RemoteDrawer" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/SpeechClass.java_SELECTED" value="SpeechClass" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/SpeechClass.java_SpeechClass_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/SpeechUtil.java_SELECTED" value="SpeechUtil" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/SpeechUtil.java_SpeechUtil_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/lg_touchpad.java_SELECTED" value="lg_touchpad" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/lg_touchpad.java_lg_touchpad_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/roku_touchpad.java_SELECTED" value="roku_touchpad" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/Universal tv/app/src/main/java/com/tv/remote/Utils/roku_touchpad.java_roku_touchpad_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Usman/AndroidStudioProjects/app/src/main/java/com/tv/remote/Utils/lg_touchpad.java_SELECTED" value="lg_touchpad" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/app/src/main/res/values-az/strings.xml" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\office_app\Universal tv\app\src\main\res\drawable" />
+      <recent name="C:\Users\Aamir\AndroidStudioProjects\Universal tv\app\src\main\res\drawable" />
+      <recent name="C:\Users\Aamir\AndroidStudioProjects\Universal tv\app\src\main\res\layout" />
+      <recent name="C:\Users\Aamir\AndroidStudioProjects\Universal tv\app\src\main\res" />
+      <recent name="C:\Users\Aamir\AndroidStudioProjects\Universal tv\app\src\main\res\values" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usman\AndroidStudioProjects\Universal tv\app\src\main\res\mipmap-hdpi" />
+    </key>
+    <key name="android.template.-1196624628">
+      <recent name="com.remote.control.allsmarttv.Activities.ir" />
+    </key>
+    <key name="android.template.2074083176">
+      <recent name="com.remote.control.allsmarttv.Activities" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.remote.control.allsmarttv.adManager" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.remote.control.allsmarttv.Utils" />
+      <recent name="com.remote.control.allsmarttv.Activities.ir" />
+      <recent name="com.tv.remote.Activities" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Universal_TV_Remote.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Universal tv" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Universal tv" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98523c0e-5a26-430f-9df3-0da79877d9af" name="Default Changelist" comment="" />
+      <created>1640880951606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640880951606</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update wifi and ir remote app on github first time.">
+      <created>1641363423826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641363423826</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit banner add code from IR remote classes.">
+      <created>1641365000481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641365000481</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove banner ads and add interstitial ads in all remotes. change layout orientation left to right.">
+      <created>1641371846818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641371846818</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update main screen design.">
+      <created>1641386449719</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641386449719</updated>
+    </task>
+    <task id="LOCAL-00005" summary="replace lgRemote.java with LgWifiRemoteActivity.java to resolve issues.">
+      <created>1641447455547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641447455547</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add manifest property for LgWifiRemoteActivity.java.">
+      <created>1641447590382</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641447590382</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Change Navigation design. And also remove issue from RemoteAdapter.java of Lg remote. Change splash screen with gif.">
+      <created>1641794266803</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641794266803</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Resolve languages issue. give layout direction left to right.">
+      <created>1642145473059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642145473059</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update design universal remote.">
+      <created>1642246746490</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642246746490</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update button circle with 2 radius.">
+      <created>1642401609104</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642401609104</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated app totally.">
+      <created>1645793121209</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645793121209</updated>
+    </task>
+    <task id="LOCAL-00012" summary="last changes for interstitial ads. make four interstitial ads to remove limit from account.">
+      <created>1646025298348</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646025298348</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change ids for arrow icons.">
+      <created>1646400116346</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646400116346</updated>
+    </task>
+    <task id="LOCAL-00014" summary="set original ads an d loader in app. and also set banner ad on Tv_list activity.">
+      <created>1647087867303</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1647087867303</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/AllVideoDownloader" />
+      <path value="$PROJECT_DIR$/Assesment" />
+      <path value="$PROJECT_DIR$/AutonomousRC" />
+      <path value="$PROJECT_DIR$/Camera" />
+      <path value="$PROJECT_DIR$/My-QR-scanner" />
+      <path value="$PROJECT_DIR$/QRscannerOffice" />
+      <path value="$PROJECT_DIR$/QiblaFinder" />
+      <path value="$PROJECT_DIR$/RamadanCalendarApp" />
+      <path value="$PROJECT_DIR$/RokuTvRemoteFiverr" />
+      <path value="$PROJECT_DIR$/ScreenMirroring" />
+      <path value="$PROJECT_DIR$/ScreenMirroringFiverr" />
+      <path value="$PROJECT_DIR$/UniversalTVRemote" />
+      <path value="$PROJECT_DIR$/VideoSoundRemover" />
+      <path value="$PROJECT_DIR$/androidtvremote_SirAnwar_Repo" />
+      <path value="$PROJECT_DIR$/qiblafinder_SirAnwar_Repo" />
+      <path value="$PROJECT_DIR$/ramadancalendar_SirAnwar_Repo" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="update wifi and ir remote app on github first time." />
+    <MESSAGE value="Commit banner add code from IR remote classes." />
+    <MESSAGE value="remove banner ads and add interstitial ads in all remotes." />
+    <MESSAGE value="remove banner ads and add interstitial ads in all remotes. change layout orientation left to right." />
+    <MESSAGE value="update main screen design." />
+    <MESSAGE value="replace lgRemote.java with LgWifiRemoteActivity.java to resolve issues." />
+    <MESSAGE value="add manifest property for LgWifiRemoteActivity.java." />
+    <MESSAGE value="Change Navigation design. And also remove issue from RemoteAdapter.java of Lg remote. Change splash screen with gif." />
+    <MESSAGE value="Resolve languages issue. give layout direction left to right." />
+    <MESSAGE value="update design universal remote." />
+    <MESSAGE value="update button circle with 2 radius." />
+    <MESSAGE value="updated app totally." />
+    <MESSAGE value="last changes for interstitial ads. make four interstitial ads to remove limit from account." />
+    <MESSAGE value="change ids for arrow icons." />
+    <MESSAGE value="set original ads an d loader in app. and also set banner ad on Tv_list activity." />
+    <option name="LAST_COMMIT_MESSAGE" value="set original ads an d loader in app. and also set banner ad on Tv_list activity." />
+  </component>
+</project>

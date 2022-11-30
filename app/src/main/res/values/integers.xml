@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="snack_lines">5</integer>
+    <integer name="touchpad_interval_long">800</integer>
+    <integer name="touchpad_interval_normal">600</integer>
+    <integer name="touchpad_interval_short">300</integer>
+</resources>

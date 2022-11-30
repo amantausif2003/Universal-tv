@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/remote_bg"
+    android:layoutDirection="ltr"
+    tools:context=".Activities.Roku_Remote">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app">
+
+        <ImageView
+            android:id="@+id/roku_remote_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:src="@drawable/backk"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_toEndOf="@+id/roku_remote_back"
+            android:fontFamily="@font/roboto"
+            android:text="@string/roku_tv"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/roku_back"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/back" />
+
+            <ImageButton
+                android:id="@+id/roku_options"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncircle"
+                android:src="@drawable/options" />
+
+            <ImageView
+                android:id="@+id/roku_Trackpad"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:src="@drawable/touch" />
+
+            <ImageView
+                android:id="@+id/roku_home"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:src="@drawable/home_button" />
+
+
+            <ImageView
+                android:id="@+id/roku_off"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_weight="1"
+                android:src="@drawable/power_off" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_below="@+id/layout2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/buttoncircle">
+
+            <ImageView
+                android:id="@+id/roku_up"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/poly_4" />
+
+            <ImageView
+                android:id="@+id/roku_down"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_26sdp"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/poly_2" />
+
+
+            <ImageView
+                android:id="@+id/roku_left"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/poly_3" />
+
+            <ImageView
+                android:id="@+id/roku_right"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/poly_1" />
+
+            <Button
+                android:id="@+id/roku_ok"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/ok_background"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <com.remote.control.allsmarttv.Utils.roku_touchpad
+            android:id="@+id/roku_touch_pad"
+            android:layout_width="@dimen/_212sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_below="@+id/layout2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/android_touch"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout3"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <ImageButton
+                android:id="@+id/roku_rewind"
+                android:layout_width="@dimen/_84sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/roku_btn_bg"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/roku_rew" />
+
+            <ImageButton
+                android:id="@+id/roku_play"
+                android:layout_width="@dimen/_84sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/roku_btn_bg"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/roku_play" />
+
+
+            <ImageButton
+                android:id="@+id/roku_forward"
+                android:layout_width="@dimen/_84sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/roku_btn_bg"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/roku_for" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <Button
+                android:id="@+id/roku_find"
+                android:layout_width="@dimen/_84sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/roku_btn_bg"
+                android:elevation="@dimen/_5sdp"
+                android:text="@string/ring_remote"
+                android:textColor="@color/app"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/roku_keyboard"
+                android:layout_width="@dimen/_84sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/roku_btn_bg"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/roku_key" />
+
+
+            <Button
+                android:id="@+id/roku_apps"
+                android:layout_width="@dimen/_84sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/roku_btn_bg"
+                android:elevation="@dimen/_5sdp"
+                android:text="@string/apps"
+                android:textColor="@color/app"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ring_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout5"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/click_any_key_on_remote_to_stop_ringing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

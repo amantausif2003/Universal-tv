@@ -1,0 +1,114 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+}
+
+android {
+
+    signingConfigs {
+        config {
+            storeFile file('D:\\office_app\\Universal tv\\app\\jks\\remoter-keystore.jks')
+            keyAlias 'key0'
+            keyPassword 'remoteapp'
+            storePassword 'remoteapp'
+        }
+        debug {
+            storeFile file('D:\\office_app\\Universal tv\\app\\jks\\remoter-keystore.jks')
+            keyAlias 'key0'
+            keyPassword 'remoteapp'
+            storePassword 'remoteapp'
+        }
+    }
+
+    compileSdk 31
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.remote.control.allsmarttv"
+        minSdk 21
+        targetSdk 31
+
+        versionCode 33
+        versionName "33"
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility "1.8"
+        targetCompatibility "1.8"
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation files('libs/polo.jar')
+    implementation files('libs/bcprov-jdk15-143.jar')
+    implementation files('libs/protobuf-java-2.2.0-lite.jar')
+    implementation files('libs/jaku-1.6.jar')
+
+    //noinspection GradleDependency
+    implementation "androidx.core:core-ktx:1.7.0"
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+    implementation 'org.jdom:jdom2:2.0.6'
+
+    implementation 'com.google.firebase:firebase-appindexing:20.0.0'
+    implementation 'com.connectsdk:connect-sdk-android-lite:1.6.0'
+
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //multi dex enabled////// libraries for IR Remote
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    //for gif view library
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/main__toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app"
+        android:elevation="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/back_apps_roku"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:src="@drawable/backk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_toEndOf="@+id/back_apps_roku"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Apps"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_swipe_roku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main__toolbar"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_6sdp">
+
+        <GridView
+            android:id="@+id/apps_list"
+            style="@style/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/thumb_size"
+            android:horizontalSpacing="@dimen/thumb_spacing"
+            android:numColumns="2"
+            android:padding="@dimen/thumb_spacing"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/thumb_spacing" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

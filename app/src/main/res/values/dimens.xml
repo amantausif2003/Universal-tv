@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_elevation">6.0dip</dimen>
+    <dimen name="button_elevation_activated">8.0dip</dimen>
+    <dimen name="ime_editor_hint_text_size">12.0sp</dimen>
+    <dimen name="ime_editor_text_size">18.0sp</dimen>
+    <dimen name="ime_editor_text_vertical_margin">8.0dip</dimen>
+    <dimen name="ime_editor_window_rounded_corner_rad">4.0dip</dimen>
+    <dimen name="touchpad_long_swipe_dis">75.0dip</dimen>
+    <dimen name="touchpad_short_swipe_dis">30.0dip</dimen>
+    <dimen name="touchpad_tap_rad">20.0dip</dimen>
+
+    <dimen name="thumb_size">100dp</dimen>
+    <dimen name="thumb_spacing">16dp</dimen>
+
+</resources>

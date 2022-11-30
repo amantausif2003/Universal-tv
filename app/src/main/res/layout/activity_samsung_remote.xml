@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/ir_background"
+    tools:context=".Activities.ir.SamsungRemoteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tvpower"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ir_power_off"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/off"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/menu_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/manu"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mute_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ir_mute"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mute"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menu">
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/home_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/home"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="190dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_background"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sbvolup"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/plus" />
+
+                <TextView
+                    android:id="@+id/tv_vol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/vol"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/sbvoldown"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/minus" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ch_row22"
+                android:layout_width="80dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <ImageView
+                    android:id="@+id/tvchnext"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/up" />
+
+                <TextView
+                    android:id="@+id/tv_channel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/ch"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/tvchprev"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:rotation="180"
+                    android:src="@drawable/up" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/plus_option"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tv_up"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/up" />
+
+                <ImageView
+                    android:id="@+id/tvleft"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:rotation="270"
+                    android:src="@drawable/up" />
+
+                <ImageButton
+                    android:id="@+id/tvok"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/txt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/ok"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/tv_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:rotation="180"
+                    android:src="@drawable/up" />
+
+                <ImageView
+                    android:id="@+id/tvright"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:rotation="90"
+                    android:src="@drawable/up" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/adView"
+            style="@style/BannerAdsView" />
+            android:layout_above="@id/adView"-->
+    </RelativeLayout>
+</RelativeLayout>

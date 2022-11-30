@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_corner_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/ir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/ir"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/ir_doesn_t_exist_in_your_device"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/ir_btn_rounded"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"
+                android:textColor="@color/app"
+                android:layout_below="@+id/exist"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="17sp"
+                android:text="@string/go_back" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

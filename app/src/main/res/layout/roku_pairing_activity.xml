@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".Activities.RokuPair">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app">
+
+        <ImageView
+            android:id="@+id/roku_pair_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:src="@drawable/backk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_toEndOf="@+id/roku_pair_back"
+            android:fontFamily="@font/roboto"
+            android:text="Roku TV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/restart_search"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:src="@drawable/refresh" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/avail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/available_roku_tv"
+            android:textColor="@color/app"
+            app:layout_constraintBottom_toTopOf="@+id/guide1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:overScrollMode="never"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guide1">
+
+            <LinearLayout
+                android:id="@+id/rokuTvs_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/roku_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/app"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guide2" />
+
+        <LinearLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roku_progressBar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="@string/searching_for_devices_on"
+                android:textColor="@color/app"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/roku_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:textColor="@color/app"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/roku_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/your_roku_tv_and_mobile_should_be_connected_to_same_wifi"
+            android:textColor="@color/app"
+            app:layout_constraintBottom_toBottomOf="@+id/guide4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guide3" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

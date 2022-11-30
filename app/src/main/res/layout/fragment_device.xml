@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/smart_devices_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/available_smart_devices"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ListView
+                android:id="@+id/smart_tvs_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cacheColorHint="#00000000"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guide1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.12" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifi_dis_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/available_smart_devices"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/wifi_image"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/wifi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guide2" />
+
+            <TextView
+                android:id="@+id/btn_noWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textColor="@color/app"
+                app:layout_constraintBottom_toTopOf="@+id/guide4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_wifi" />
+
+            <TextView
+                android:id="@+id/text_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Wifi is not connected"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wifi_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_28sdp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guide3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Try to connect with Bluetooth. Your tv and mobile should be connected to same wifi" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_Tv_layout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/available_smart_devices"
+                android:textColor="@color/app"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/noTv_status"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noDevice_image"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:textColor="@color/app"
+                app:layout_constraintBottom_toTopOf="@+id/guide6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noDevice_image" />
+
+            <ProgressBar
+                android:indeterminateTint="@color/app"
+                android:id="@+id/noDevice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/disconnect"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guide5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_28sdp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guide7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="@string/try_to_connect_with_bluetooth_your_tv_and_mobile_should_be_connected_to_same_wifi"
+                    android:textColor="@color/app" />
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.58" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/_40sdp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/app"
+        android:layout_height="@dimen/_40sdp"
+        android:indeterminate="true"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>

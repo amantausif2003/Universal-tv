@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_8sdp"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:choiceMode="singleChoice"/>
+
+    <View
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"/>
+
+    <ListView
+        android:id="@+id/remote"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:choiceMode="singleChoice"/>
+
+    <ListView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:choiceMode="singleChoice"/>
+
+    <ListView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:choiceMode="multipleChoice"/>
+
+</LinearLayout>
