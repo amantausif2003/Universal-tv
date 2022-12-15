@@ -14,15 +14,35 @@ object AdManager {
     private var interstitialAdsSample: String = "ca-app-pub-3940256099942544/1033173712"
 
     //This is default id
-    private var interstitialAds: String = "ca-app-pub-3043189731871157/3550719502"
+    private var interstitialAds: String = "ca-app-pub-3043189731871157/4832807745"
 
-    private var interstitialAds1: String = "ca-app-pub-3043189731871157/3550719502"
-    private var interstitialAds2: String = "ca-app-pub-3043189731871157/4832807745"
+    private var interstitialAds1: String = "ca-app-pub-3043189731871157/4832807745"
+    private var interstitialAds2: String = "ca-app-pub-3043189731871157/6026469914"
+
+    var bannerAd1 :String = "ca-app-pub-3043189731871157/8652633255"
+    var bannerAd2 :String = "ca-app-pub-3043189731871157/3550719502"
+
     private var mInterstitialAd: InterstitialAd? = null
     private val adRequest: AdRequest = AdRequest.Builder().build()
     private var callBackInterstitial: CallBackInterstitial? = null
     private const val myTag: String = "myInterstitialAds"
     private var InterstitialStatus: Boolean = true
+
+    var bannerStatusId: Boolean = false
+
+    fun getBannerID(): String {
+        return if (BuildConfig.DEBUG) {
+            "ca-app-pub-3940256099942544/6300978111"
+        } else {
+            if (bannerStatusId) {
+                bannerStatusId = false
+                return "ca-app-pub-3043189731871157/8652633255"
+            } else {
+                bannerStatusId = true
+                return "ca-app-pub-3043189731871157/3550719502"
+            }
+        }
+    }
 
     @JvmStatic
     fun loadInterstitialAd() {
