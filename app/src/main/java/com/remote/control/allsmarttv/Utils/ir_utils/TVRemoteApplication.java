@@ -2,8 +2,11 @@ package com.remote.control.allsmarttv.Utils.ir_utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+
 import androidx.multidex.MultiDexApplication;
+
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.FirebaseApp;
 
 public class TVRemoteApplication extends MultiDexApplication {
 
@@ -17,6 +20,7 @@ public class TVRemoteApplication extends MultiDexApplication {
     public static void setContext(Context context) {
         TVRemoteApplication.context = context;
     }
+
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);

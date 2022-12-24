@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "617592295274",
-    "project_id": "allsmarttvremote",
-    "storage_bucket": "allsmarttvremote.appspot.com"
+    "project_number": "980620782892",
+    "project_id": "universal-tv-17459",
+    "storage_bucket": "universal-tv-17459.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:617592295274:android:a6164bf7251c1047429f13",
+        "mobilesdk_app_id": "1:980620782892:android:5ad0a64f6debd566dc5089",
         "android_client_info": {
           "package_name": "com.remote.control.allsmarttv"
         }
       },
       "oauth_client": [
         {
-          "client_id": "617592295274-q1mg0gjcd4ml000987m4j9rcrl78ljmq.apps.googleusercontent.com",
+          "client_id": "980620782892-h2lul465b1of3climrj6hssoffhtavk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.remote.control.allsmarttv",
+            "certificate_hash": "35dfbbb075a3b06e38de25b915cd9f4144d0fed3"
+          }
+        },
+        {
+          "client_id": "980620782892-jn8b5j345varmo1gebrp58j2acplrvhh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAGylxXABiPY4MrRRzK34XASAZBzgi8Dak"
+          "current_key": "AIzaSyACpk4emZCAjMEh4wnMowRo9ESgBLrJwQA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "617592295274-q1mg0gjcd4ml000987m4j9rcrl78ljmq.apps.googleusercontent.com",
+              "client_id": "980620782892-jn8b5j345varmo1gebrp58j2acplrvhh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -11,6 +11,7 @@ import android.os.Looper;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.google.firebase.FirebaseApp;
 import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
 import com.remote.control.allsmarttv.databinding.ActivitySplashBinding;
 
@@ -25,6 +26,8 @@ public class SplashActivity extends AppCompatActivity {
         SupportedClass.loadLangLocale(getBaseContext());
         splashBinding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(splashBinding.getRoot());
+
+        FirebaseApp.initializeApp(this);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
 
