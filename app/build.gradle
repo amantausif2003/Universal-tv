@@ -17,7 +17,7 @@ android {
             keyPassword 'remoteapp'
             storePassword 'remoteapp'
         }
-        debug {
+        release {
             storeFile file('D:\\ca_app\\Universal-tv\\app\\jks\\remoter-keystore.jks')
             keyAlias 'key0'
             keyPassword 'remoteapp'
@@ -25,13 +25,15 @@ android {
         }
     }
 
-    compileSdk 31
+    compileSdkVersion 32
+    // NOTE: Do not place any update dependencies here; they belong 30.0.3
     buildToolsVersion '30.0.3'
 
     defaultConfig {
         applicationId "com.remote.control.allsmarttv"
-        minSdk 21
-        targetSdk 31
+        minSdkVersion 21
+        //noinspection OldTargetApi
+        targetSdkVersion 32
 
         versionCode 35
         versionName "35"
@@ -48,12 +50,14 @@ android {
             minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
 
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
