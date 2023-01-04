@@ -1,34 +1,34 @@
 package com.remote.control.allsmarttv.Activities
 
 import android.app.Dialog
-import com.remote.control.allsmarttv.adManager.AdManager.loadInterstitialAd
-import com.remote.control.allsmarttv.adManager.AdManager.isInterstialLoaded
-import com.remote.control.allsmarttv.adManager.AdManager.showInterstitial
-import androidx.appcompat.app.AppCompatActivity
-import com.remote.control.allsmarttv.adManager.AdManager.CallBackInterstitial
-import android.widget.RelativeLayout
-import android.os.Bundle
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass
-import com.remote.control.allsmarttv.R
-import android.content.Intent
 import android.content.ActivityNotFoundException
-import android.widget.Toast
+import android.content.Intent
 import android.hardware.ConsumerIrManager
 import android.net.Uri
+import android.os.Bundle
 import android.util.DisplayMetrics
 import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.RelativeLayout
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.remote.control.allsmarttv.Activities.ir.RemoteNameActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
+import com.remote.control.allsmarttv.Activities.ir.RemoteNameActivity
+import com.remote.control.allsmarttv.Activities.ir.RokuRemote
+import com.remote.control.allsmarttv.R
+import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass
 import com.remote.control.allsmarttv.adManager.AdManager
+import com.remote.control.allsmarttv.adManager.AdManager.CallBackInterstitial
+import com.remote.control.allsmarttv.adManager.AdManager.isInterstialLoaded
+import com.remote.control.allsmarttv.adManager.AdManager.loadInterstitialAd
+import com.remote.control.allsmarttv.adManager.AdManager.showInterstitial
 import com.remote.control.allsmarttv.databinding.ActivityMainBinding
-import java.lang.Exception
 
 class FirstActivity : AppCompatActivity(), CallBackInterstitial {
     private var isBtnClicked = 0
@@ -261,6 +261,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
                 Intent(this@FirstActivity, LgWifiRemoteActivity::class.java)
                     .putExtra("tv", "sam")
             )
+
         }
         if (isBtnClicked == 1) {
             startActivity(
@@ -269,7 +270,9 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             )
         }
         if (isBtnClicked == 2) {
-            startActivity(Intent(this@FirstActivity, Tv_list::class.java))
+//            startActivity(Intent(this@FirstActivity, Tv_list::class.java))
+            startActivity(Intent(this@FirstActivity, RokuRemote::class.java))
+
         }
         if (isBtnClicked == 3) {
             startActivity(Intent(this@FirstActivity, RemoteActivity::class.java))

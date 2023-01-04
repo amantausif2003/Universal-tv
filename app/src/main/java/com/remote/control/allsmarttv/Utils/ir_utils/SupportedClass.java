@@ -2,7 +2,6 @@ package com.remote.control.allsmarttv.Utils.ir_utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -16,7 +15,7 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.remote.control.allsmarttv.Activities.SplashActivity;
+import com.remote.control.allsmarttv.Activities.StartingScreen;
 import com.remote.control.allsmarttv.R;
 
 import java.util.Locale;
@@ -121,176 +120,176 @@ public class SupportedClass {
             public void onClick(DialogInterface dialog, int i) {
                 if (i == 0) {
                     setLangLocale(context, "ar", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
 
                 } else if (i == 1) {
                     setLangLocale(context, "az", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 2) {
                     setLangLocale(context, "bn", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 3) {
                     setLangLocale(context, "bg", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 4) {
                     setLangLocale(context, "zh", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 5) {
                     setLangLocale(context, "cs", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 6) {
                     setLangLocale(context, "da", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 7) {
                     setLangLocale(context, "nl", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 8) {
                     setLangLocale(context, "en", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 9) {
                     setLangLocale(context, "fr", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 10) {
                     setLangLocale(context, "de", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 11) {
                     setLangLocale(context, "ka", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 12) {
                     setLangLocale(context, "hi", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 13) {
                     setLangLocale(context, "iw", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 14) {
                     setLangLocale(context, "hu", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 15) {
                     setLangLocale(context, "in", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 16) {
                     setLangLocale(context, "it", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 17) {
                     setLangLocale(context, "ja", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 18) {
                     setLangLocale(context, "ko", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 19) {
                     setLangLocale(context, "ms", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 20) {
                     setLangLocale(context, "fa", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 21) {
                     setLangLocale(context, "pl", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 22) {
                     setLangLocale(context, "pt", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 23) {
                     setLangLocale(context, "ru", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 24) {
                     setLangLocale(context, "es", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 25) {
                     setLangLocale(context, "th", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 26) {
                     setLangLocale(context, "uk", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 27) {
                     setLangLocale(context, "ur", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();
                 } else if (i == 28) {
                     setLangLocale(context, "vi", i);
-                    Intent intent = new Intent(context, SplashActivity.class);
+                    Intent intent = new Intent(context, StartingScreen.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     context.startActivity(intent);
                     activity.finish();

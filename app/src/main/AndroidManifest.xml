@@ -97,7 +97,7 @@
             tools:ignore="LockedOrientationActivity"
             tools:node="merge" />
         <activity
-            android:name=".Activities.SplashActivity"
+            android:name=".Activities.StartingScreen"
             android:configChanges="orientation"
             android:exported="true"
             android:screenOrientation="portrait"

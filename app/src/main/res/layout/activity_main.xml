@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
-    android:layoutDirection="ltr"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
@@ -97,13 +97,31 @@
                         app:cardCornerRadius="@dimen/_12sdp">
 
 
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_110sdp">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/app_name"
+                                ads:layout_constraintBottom_toBottomOf="parent"
+                                ads:layout_constraintEnd_toEndOf="parent"
+                                ads:layout_constraintStart_toStartOf="parent"
+                                ads:layout_constraintTop_toTopOf="parent"
+                                ads:layout_constraintVertical_bias="0.5"
+                                ads:srcCompat="@drawable/tcl_icon" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_110sdp"
                             android:layout_gravity="center"
                             android:background="@drawable/search_tv"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="gone">
 
                             <TextView
                                 android:layout_width="wrap_content"
