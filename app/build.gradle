@@ -3,19 +3,22 @@ plugins {
     id 'kotlin-android'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
 
     signingConfigs {
         config {
-            storeFile file('D:\\office_app\\Universal tv\\app\\jks\\remoter-keystore.jks')
+
+            storeFile file('D:\\ca_app\\Universal-tv\\app\\jks\\remoter-keystore.jks')
             keyAlias 'key0'
             keyPassword 'remoteapp'
             storePassword 'remoteapp'
         }
         debug {
-            storeFile file('D:\\office_app\\Universal tv\\app\\jks\\remoter-keystore.jks')
+            storeFile file('D:\\ca_app\\Universal-tv\\app\\jks\\remoter-keystore.jks')
             keyAlias 'key0'
             keyPassword 'remoteapp'
             storePassword 'remoteapp'
@@ -112,5 +115,3 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
 
 }
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.google.firebase.crashlytics'
