@@ -15,12 +15,12 @@ import com.jaku.core.JakuRequest;
 import com.jaku.core.KeypressKeyValues;
 import com.jaku.request.KeypressRequest;
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.KeyboardUtil;
-import com.remote.control.allsmarttv.Utils.RokuCmds;
-import com.remote.control.allsmarttv.Utils.RokureqType;
-import com.remote.control.allsmarttv.Utils.RxRokuTask;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
-import com.remote.control.allsmarttv.Utils.roku_touchpad;
+import com.remote.control.allsmarttv.utils.KeyboardUtil;
+import com.remote.control.allsmarttv.utils.RokuCmds;
+import com.remote.control.allsmarttv.utils.RokureqType;
+import com.remote.control.allsmarttv.utils.RxRokuTask;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.roku_touchpad;
 import com.remote.control.allsmarttv.databinding.RokuActivityBinding;
 
 import io.reactivex.Observable;

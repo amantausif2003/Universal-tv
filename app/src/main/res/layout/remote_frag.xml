@@ -393,7 +393,7 @@
                 android:elevation="@dimen/_5sdp"
                 android:src="@drawable/home_button" />
 
-            <com.remote.control.allsmarttv.Utils.SpeechUtil
+            <com.remote.control.allsmarttv.utils.SpeechUtil
                 android:id="@+id/button_mic"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
@@ -471,7 +471,7 @@
 
         </RelativeLayout>
 
-        <com.remote.control.allsmarttv.Utils.android_touchpad
+        <com.remote.control.allsmarttv.utils.android_touchpad
             android:id="@+id/android_touchpad"
             android:background="@drawable/android_touch"
             android:layout_centerHorizontal="true"

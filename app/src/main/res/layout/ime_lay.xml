@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"/>
 
-            <com.remote.control.allsmarttv.Utils.ImeUtil
+            <com.remote.control.allsmarttv.utils.ImeUtil
                 android:textSize="@dimen/_16sdp"
                 android:textColor="@color/white"
                 android:id="@+id/ime"

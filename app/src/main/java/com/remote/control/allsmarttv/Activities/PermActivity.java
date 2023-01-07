@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 import com.remote.control.allsmarttv.databinding.ActivityPermissionBinding;
 
 import java.util.ArrayList;

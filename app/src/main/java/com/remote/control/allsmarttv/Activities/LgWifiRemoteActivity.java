@@ -24,10 +24,10 @@ import com.connectsdk.service.capability.VolumeControl;
 import com.connectsdk.service.command.ServiceCommandError;
 import com.connectsdk.service.sessions.LaunchSession;
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.TestResponseClass;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
-import com.remote.control.allsmarttv.Utils.lg_touchpad;
-import com.remote.control.allsmarttv.Utils.sonyPicker;
+import com.remote.control.allsmarttv.utils.TestResponseClass;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.lg_touchpad;
+import com.remote.control.allsmarttv.utils.sonyPicker;
 import com.remote.control.allsmarttv.databinding.ActivityLgWifiRemoteBinding;
 
 public class LgWifiRemoteActivity extends AppCompatActivity implements DiscoveryManagerListener {

@@ -48,12 +48,12 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.remote.control.allsmarttv.Activities.RemoteActivity;
-import com.remote.control.allsmarttv.Utils.ImeListenerCall;
-import com.remote.control.allsmarttv.Utils.OnRemoteListener;
+import com.remote.control.allsmarttv.utils.ImeListenerCall;
+import com.remote.control.allsmarttv.utils.OnRemoteListener;
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.ImeUtil;
-import com.remote.control.allsmarttv.Utils.SpeechUtil;
-import com.remote.control.allsmarttv.Utils.android_touchpad;
+import com.remote.control.allsmarttv.utils.ImeUtil;
+import com.remote.control.allsmarttv.utils.SpeechUtil;
+import com.remote.control.allsmarttv.utils.android_touchpad;
 
 public class RemoteFragment extends Fragment {
 

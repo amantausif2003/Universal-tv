@@ -42,20 +42,20 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
-import com.remote.control.allsmarttv.Utils.ImeListenerCall;
+import com.remote.control.allsmarttv.utils.ImeListenerCall;
 import com.remote.control.allsmarttv.Fragments.ConnFrag;
 import com.remote.control.allsmarttv.Fragments.DeviceFragment;
 import com.remote.control.allsmarttv.Fragments.NavFragment;
 import com.remote.control.allsmarttv.Fragments.PairingFragment;
 import com.remote.control.allsmarttv.Fragments.RemoteFragment;
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.BuildInfo;
-import com.remote.control.allsmarttv.Utils.CapabilitiesClass;
-import com.remote.control.allsmarttv.Utils.ClientService;
-import com.remote.control.allsmarttv.Utils.Device;
-import com.remote.control.allsmarttv.Utils.DevicesInfoUtil;
-import com.remote.control.allsmarttv.Utils.TvPreferences;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.BuildInfo;
+import com.remote.control.allsmarttv.utils.CapabilitiesClass;
+import com.remote.control.allsmarttv.utils.ClientService;
+import com.remote.control.allsmarttv.utils.Device;
+import com.remote.control.allsmarttv.utils.DevicesInfoUtil;
+import com.remote.control.allsmarttv.utils.TvPreferences;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 
 import java.util.Map;
 

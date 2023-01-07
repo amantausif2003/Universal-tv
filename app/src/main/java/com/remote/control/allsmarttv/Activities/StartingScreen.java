@@ -1,7 +1,6 @@
 package com.remote.control.allsmarttv.Activities;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -12,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.google.firebase.FirebaseApp;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 import com.remote.control.allsmarttv.databinding.ActivitySplashBinding;
 
 

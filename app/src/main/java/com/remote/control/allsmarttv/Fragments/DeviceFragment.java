@@ -29,9 +29,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.DevicesInfoUtil;
-import com.remote.control.allsmarttv.Utils.Discoverer;
-import com.remote.control.allsmarttv.Utils.NetworkUtil;
+import com.remote.control.allsmarttv.utils.DevicesInfoUtil;
+import com.remote.control.allsmarttv.utils.Discoverer;
+import com.remote.control.allsmarttv.utils.NetworkUtil;
 
 import java.text.Collator;
 import java.util.ArrayList;

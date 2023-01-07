@@ -168,7 +168,7 @@
 
         </RelativeLayout>
 
-        <com.remote.control.allsmarttv.Utils.roku_touchpad
+        <com.remote.control.allsmarttv.utils.roku_touchpad
             android:id="@+id/roku_touch_pad"
             android:layout_width="@dimen/_212sdp"
             android:layout_height="@dimen/_170sdp"

@@ -484,7 +484,7 @@
 
         </RelativeLayout>
 
-        <com.remote.control.allsmarttv.Utils.lg_touchpad
+        <com.remote.control.allsmarttv.utils.lg_touchpad
             android:id="@+id/lg_touchpad"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_130sdp"

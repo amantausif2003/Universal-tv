@@ -21,10 +21,10 @@ import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.remote.control.allsmarttv.Activities.ir.RemoteNameActivity
 import com.remote.control.allsmarttv.Activities.ir.RokuRemote
-import com.remote.control.allsmarttv.Activities.ir.SamsungRemoteActivity
+import com.remote.control.allsmarttv.irtv.SamsungRemoteActivity
 import com.remote.control.allsmarttv.Activities.ir.SonyRemote
 import com.remote.control.allsmarttv.R
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass
 import com.remote.control.allsmarttv.adManager.AdManager
 import com.remote.control.allsmarttv.adManager.AdManager.CallBackInterstitial
 import com.remote.control.allsmarttv.adManager.AdManager.isInterstialLoaded

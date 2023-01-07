@@ -6,7 +6,7 @@ import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.remote.control.allsmarttv.BuildConfig
-import com.remote.control.allsmarttv.Utils.ir_utils.TVRemoteApplication
+import com.remote.control.allsmarttv.utils.ir_utils.TVRemoteApplication
 
 object AdManager {
 

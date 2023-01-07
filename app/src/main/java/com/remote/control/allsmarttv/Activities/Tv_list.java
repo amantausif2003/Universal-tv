@@ -13,9 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.Remote_model;
-import com.remote.control.allsmarttv.Utils.RemoteAdapter;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.Remote_model;
+import com.remote.control.allsmarttv.utils.RemoteAdapter;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 
 import java.util.ArrayList;
 

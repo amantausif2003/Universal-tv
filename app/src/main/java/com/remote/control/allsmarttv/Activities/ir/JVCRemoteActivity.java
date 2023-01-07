@@ -9,13 +9,11 @@ import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
-import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.remote.control.allsmarttv.R;
-import com.remote.control.allsmarttv.Utils.ir_utils.ParentActvity;
-import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass;
+import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
