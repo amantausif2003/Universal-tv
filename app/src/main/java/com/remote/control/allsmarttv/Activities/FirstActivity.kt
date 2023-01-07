@@ -31,6 +31,7 @@ import com.remote.control.allsmarttv.adManager.AdManager.isInterstialLoaded
 import com.remote.control.allsmarttv.adManager.AdManager.loadInterstitialAd
 import com.remote.control.allsmarttv.adManager.AdManager.showInterstitial
 import com.remote.control.allsmarttv.databinding.ActivityMainBinding
+import com.remote.control.allsmarttv.irtv.TCLRemote
 
 class FirstActivity : AppCompatActivity(), CallBackInterstitial {
     private var isBtnClicked = 0
@@ -271,7 +272,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         }
 
         if (isBtnClicked == 2) {
-            startActivity(Intent(this@FirstActivity, RokuRemote::class.java))
+            startActivity(Intent(this@FirstActivity, TCLRemote::class.java))
         }
 
         if (isBtnClicked == 3) {

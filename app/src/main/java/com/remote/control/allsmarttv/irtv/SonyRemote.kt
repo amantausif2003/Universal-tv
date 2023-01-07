@@ -26,9 +26,7 @@ class SonyRemote : AppCompatActivity() {
             supportActionBar!!.hide()
         }
 
-
         irManager = getSystemService(CONSUMER_IR_SERVICE) as ConsumerIrManager
-
 
         mainBinding.tvPower.setOnClickListener {
             when (onOff) {

@@ -33,28 +33,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98523c0e-5a26-430f-9df3-0da79877d9af" name="Default Changelist" comment="set original ads an d loader in app. and also set banner ad on Tv_list activity.">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/ir/RokuRemote.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/irtv/TCLRemote.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tclremote.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/FirstActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/FirstActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/ir/RemoteNameActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/ir/RemoteNameActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/ir/SonyRemote.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/irtv/SonyRemote.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/irtv/SamsungRemoteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/irtv/SamsungRemoteActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_samsung_remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_samsung_remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/ir/RokuRemote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/irtv/SonyRemote.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/irtv/SonyRemote.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sony_remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sony_remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[b44f6e3e152c]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\victus\.android\avd\Pixel_2_API_21.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -204,6 +205,9 @@
       <recent name="C:\Users\Usman\AndroidStudioProjects\Universal tv\app\src\main\res\mipmap-hdpi" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.remote.control.allsmarttv.irtv" />
+    </key>
+    <key name="android.template.-1681972792">
       <recent name="com.remote.control.allsmarttv.irtv" />
     </key>
     <key name="android.template.-1196624628">
