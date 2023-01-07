@@ -24,7 +24,7 @@ import java.util.List;
 public class SamsungRemoteActivity extends AppCompatActivity {
 
     private final static String CMD_TV_POWER =
-            "0000 006D 0000 0022 00AA 00AA 0014 003F 0014 003F 0014 003F 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 003F 0014 003F 0014 003F 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 003F 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 0014 003F 0014 0014 0014 003F 0014 003F 0014 003F 0014 003F 0014 003F 0014 003F 0014 0706";
+            "0000 006d 0022 0003 00a9 00a8 0015 003f 0015 003f 0015 003f 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 003f 0015 003f 0015 003f 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 003f 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0040 0015 0015 0015 003f 0015 003f 0015 003f 0015 003f 0015 003f 0015 003f 0015 0702 00a9 00a8 0015 0015 0015 0e6e";
     private final static String CMD_TV_CH_NEXT =
             "0000 006D 0000 0022 00ac 00ac 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0015 0016 0015 0016 0040 0016 0015 0016 0015 0016 0015 0016 0040 0016 0015 0016 0040 0016 0040 0016 0015 0016 0040 0016 0040 0016 0040 0016 071c";
     private final static String CMD_TV_CH_PREV =
@@ -113,6 +113,7 @@ public class SamsungRemoteActivity extends AppCompatActivity {
 
 
     private class ClickListener implements View.OnClickListener {
+
         private final IRCommand cmd;
 
         public ClickListener(final IRCommand cmd) {
@@ -124,15 +125,13 @@ public class SamsungRemoteActivity extends AppCompatActivity {
 
             mp.start();
 
-//            ToneGenerator toneGenerator = new ToneGenerator(1, 100);
-//            toneGenerator.startTone(ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD, 200); //200 is duration in ms
-
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 vibe.vibrate(VibrationEffect.createOneShot(150, VibrationEffect.DEFAULT_AMPLITUDE));
             } else {
                 //deprecated in API 26
                 vibe.vibrate(150);
             }
+
             try {
                 Log.d("Remote", "frequency: " + cmd.freq);
                 Log.d("Remote", "pattern: " + Arrays.toString(cmd.pattern));

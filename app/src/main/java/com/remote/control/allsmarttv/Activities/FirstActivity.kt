@@ -21,6 +21,7 @@ import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.remote.control.allsmarttv.Activities.ir.RemoteNameActivity
 import com.remote.control.allsmarttv.Activities.ir.RokuRemote
+import com.remote.control.allsmarttv.Activities.ir.SamsungRemoteActivity
 import com.remote.control.allsmarttv.R
 import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass
 import com.remote.control.allsmarttv.adManager.AdManager
@@ -258,7 +259,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
     private fun moveToRequireActivity() {
         if (isBtnClicked == 0) {
             startActivity(
-                Intent(this@FirstActivity, LgWifiRemoteActivity::class.java)
+                Intent(this@FirstActivity, SamsungRemoteActivity::class.java)
                     .putExtra("tv", "sam")
             )
 
@@ -272,8 +273,8 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         if (isBtnClicked == 2) {
 //            startActivity(Intent(this@FirstActivity, Tv_list::class.java))
             startActivity(Intent(this@FirstActivity, RokuRemote::class.java))
-
         }
+
         if (isBtnClicked == 3) {
             startActivity(Intent(this@FirstActivity, RemoteActivity::class.java))
         }
