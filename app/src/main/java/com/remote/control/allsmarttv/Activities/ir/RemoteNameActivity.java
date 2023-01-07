@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.ads.AdError;
 import com.remote.control.allsmarttv.R;
+import com.remote.control.allsmarttv.irtv.SonyRemote;
 import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 import com.remote.control.allsmarttv.adManager.AdManager;
 import com.remote.control.allsmarttv.adapter.RemoteNameAdapter;

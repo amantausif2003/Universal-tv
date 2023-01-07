@@ -164,7 +164,7 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Activities.ir.SonyRemote"
+            android:name=".irtv.SonyRemote"
             android:configChanges="orientation"
             android:exported="true"
             android:screenOrientation="portrait"

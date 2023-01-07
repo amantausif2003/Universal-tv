@@ -88,7 +88,7 @@ class SamsungRemoteActivity : AppCompatActivity() {
         frequency = (1000000 / (frequency * 0.241246)).toInt()
         val pulses: Int = 1000000 / frequency
 
-        var count: Int
+        var count: Int = 0
 
         val pattern = IntArray(list.size)
         val hexCodes: Int = list.size - 1
@@ -101,6 +101,25 @@ class SamsungRemoteActivity : AppCompatActivity() {
     }
 
     private class IRCommand(var freq: Int, var pattern: IntArray)
+
+    private fun click(cmd: IRCommand) {
+
+        // Check if the phone has an IR transmitter
+        if (!irManager.hasIrEmitter()) {
+            // Show an error message if the phone does not have an IR transmitter
+            Util.showToast(this,"Your phone does not have an IR transmitter")
+        } else {
+
+            Util.vibrateDevice(this)
+
+            try {
+                irManager.transmit(cmd.freq, cmd.pattern)
+            } catch (ex: Exception) {
+                ex.printStackTrace()
+            }
+        }
+
+    }
 
     companion object {
 
@@ -130,38 +149,6 @@ class SamsungRemoteActivity : AppCompatActivity() {
             "0000 006D 0000 0022 00ac 00ac 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0040 0016 0040 0016 0040 0016 0040 0016 071c"
         private const val CMD_SB_VOLDOWN =
             "0000 006D 0000 0022 00ac 00ac 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0040 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0040 0016 0015 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0015 0016 0040 0016 0040 0016 0040 0016 0040 0016 071c"
-    }
-
-
-    private fun click(cmd: IRCommand) {
-
-        // Check if the phone has an IR transmitter
-        if (!irManager.hasIrEmitter()) {
-            // Show an error message if the phone does not have an IR transmitter
-           Util.showToast(this,"Your phone does not have an IR transmitter")
-        } else {
-
-            Util.vibrateDevice(this)
-
-           /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                vibe!!.vibrate(
-                    VibrationEffect.createOneShot(
-                        150,
-                        VibrationEffect.DEFAULT_AMPLITUDE
-                    )
-                )
-            } else {
-                //deprecated in API 26
-                vibe!!.vibrate(150)
-            }*/
-
-            try {
-                irManager.transmit(cmd.freq, cmd.pattern)
-            } catch (ex: Exception) {
-                ex.printStackTrace()
-            }
-        }
-
     }
 
 }
