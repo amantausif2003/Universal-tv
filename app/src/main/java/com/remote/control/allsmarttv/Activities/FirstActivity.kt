@@ -15,6 +15,7 @@ import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import com.connectsdk.core.Util
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
@@ -32,8 +33,10 @@ import com.remote.control.allsmarttv.adManager.AdManager.loadInterstitialAd
 import com.remote.control.allsmarttv.adManager.AdManager.showInterstitial
 import com.remote.control.allsmarttv.databinding.ActivityMainBinding
 import com.remote.control.allsmarttv.irtv.TCLRemote
+import com.remote.control.allsmarttv.utils.Util.showToast
 
 class FirstActivity : AppCompatActivity(), CallBackInterstitial {
+
     private var isBtnClicked = 0
     var drawerToggle: ActionBarDrawerToggle? = null
     var activityMainBinding: ActivityMainBinding? = null
@@ -42,6 +45,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
     var button_more: RelativeLayout? = null
     var button_share: RelativeLayout? = null
     var button_feedback: RelativeLayout? = null
+
     private var adLayout: FrameLayout? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +59,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         adLayout = findViewById(R.id.adLayout)
 
         loadInterstitialAd()
+
         loadBanner()
 
         button_privacy = findViewById(R.id.btn_privacy)
@@ -161,7 +166,8 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }
         }
         activityMainBinding!!.androidTv.setOnClickListener {
-            if (SupportedClass.checkConnection(this@FirstActivity)) {
+           com.remote.control.allsmarttv.utils.Util.showToast(this,"Up Coming")
+            /*if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 3
                 if (isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
@@ -171,10 +177,14 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             } else {
                 Toast.makeText(this@FirstActivity, R.string.check_internet, Toast.LENGTH_SHORT)
                     .show()
-            }
+            }*/
         }
+
         activityMainBinding!!.rokuTv.setOnClickListener {
-            if (SupportedClass.checkConnection(this@FirstActivity)) {
+
+            com.remote.control.allsmarttv.utils.Util.showToast(this,"Up Coming")
+
+            /*if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 4
                 if (isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
@@ -184,10 +194,15 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             } else {
                 Toast.makeText(this@FirstActivity, R.string.check_internet, Toast.LENGTH_SHORT)
                     .show()
-            }
+            }*/
+
         }
+
         activityMainBinding!!.lgTv.setOnClickListener {
-            if (SupportedClass.checkConnection(this@FirstActivity)) {
+
+            com.remote.control.allsmarttv.utils.Util.showToast(this,"Up Coming")
+
+            /*if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 5
                 if (isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
@@ -197,10 +212,13 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             } else {
                 Toast.makeText(this@FirstActivity, R.string.check_internet, Toast.LENGTH_SHORT)
                     .show()
-            }
+            }*/
         }
         activityMainBinding!!.irRemote.setOnClickListener {
-            if (SupportedClass.checkConnection(this@FirstActivity)) {
+
+            com.remote.control.allsmarttv.utils.Util.showToast(this,"Up Coming")
+
+            /*if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 6
                 if (isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
@@ -210,8 +228,9 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             } else {
                 Toast.makeText(this@FirstActivity, R.string.check_internet, Toast.LENGTH_SHORT)
                     .show()
-            }
+            }*/
         }
+
     }
 
     /**************************************Banner Ads *********************************/

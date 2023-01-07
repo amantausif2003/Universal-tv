@@ -46,7 +46,7 @@ class SonyRemote : AppCompatActivity() {
         }
 
         mainBinding.tvMute.setOnClickListener {
-            click(hex2ir(CMD_TV_MENU))
+            click(hex2ir(CMD_TV_MUTE))
         }
 
         mainBinding.tvExit.setOnClickListener {
