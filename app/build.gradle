@@ -10,6 +10,7 @@ plugins {
 android {
 
     signingConfigs {
+
         config {
 
             storeFile file('D:\\ca_app\\Universal-tv\\app\\jks\\remoter-keystore.jks')

@@ -35,6 +35,7 @@ public class SonyRemote extends AppCompatActivity {
             "0000 0068 0000 000d 0060 0018 0030 0018 0018 0018 0030 0018 0018 0018 0030 0018 0030 0018 0030 0018 0030 0018 0018 0018 0018 0018 0018 0018 0018 03de";
     private final static String CMD_TV_MENU =
             "0000 0068 0000 000d 0060 0018 0018 0018 0018 0018 0018 0018 0018 0018 0018 0018 0030 0018 0030 0018 0030 0018 0018 0018 0018 0018 0018 0018 0018 0422";
+
     private String TAG = "SonyRemote";
 
     private final static String CMD_TV_LEFT =
@@ -55,6 +56,7 @@ public class SonyRemote extends AppCompatActivity {
     private Vibrator vibe;
     MediaPlayer mp;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +65,6 @@ public class SonyRemote extends AppCompatActivity {
         if (this.getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        /*RelativeLayout mAdView = findViewById(R.id.adView);
-        loadBannerAds(mAdView);*/
         irManager = (ConsumerIrManager) getSystemService(CONSUMER_IR_SERVICE);
 
         vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);

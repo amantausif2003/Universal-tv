@@ -22,6 +22,7 @@ import com.google.android.gms.ads.AdView
 import com.remote.control.allsmarttv.Activities.ir.RemoteNameActivity
 import com.remote.control.allsmarttv.Activities.ir.RokuRemote
 import com.remote.control.allsmarttv.Activities.ir.SamsungRemoteActivity
+import com.remote.control.allsmarttv.Activities.ir.SonyRemote
 import com.remote.control.allsmarttv.R
 import com.remote.control.allsmarttv.Utils.ir_utils.SupportedClass
 import com.remote.control.allsmarttv.adManager.AdManager
@@ -260,18 +261,16 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         if (isBtnClicked == 0) {
             startActivity(
                 Intent(this@FirstActivity, SamsungRemoteActivity::class.java)
-                    .putExtra("tv", "sam")
             )
 
         }
         if (isBtnClicked == 1) {
             startActivity(
-                Intent(this@FirstActivity, LgWifiRemoteActivity::class.java)
-                    .putExtra("tv", "sony")
+                Intent(this@FirstActivity, SonyRemote::class.java)
             )
         }
+
         if (isBtnClicked == 2) {
-//            startActivity(Intent(this@FirstActivity, Tv_list::class.java))
             startActivity(Intent(this@FirstActivity, RokuRemote::class.java))
         }
 
