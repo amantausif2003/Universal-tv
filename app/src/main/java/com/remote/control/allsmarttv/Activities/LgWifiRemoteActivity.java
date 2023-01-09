@@ -24,6 +24,7 @@ import com.connectsdk.service.capability.VolumeControl;
 import com.connectsdk.service.command.ServiceCommandError;
 import com.connectsdk.service.sessions.LaunchSession;
 import com.remote.control.allsmarttv.R;
+import com.remote.control.allsmarttv.appUi.FirstActivity;
 import com.remote.control.allsmarttv.utils.TestResponseClass;
 import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 import com.remote.control.allsmarttv.utils.lg_touchpad;

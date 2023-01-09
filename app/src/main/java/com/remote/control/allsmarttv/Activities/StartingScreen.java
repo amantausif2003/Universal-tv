@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.google.firebase.FirebaseApp;
+import com.remote.control.allsmarttv.appUi.FirstActivity;
 import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
 import com.remote.control.allsmarttv.databinding.ActivitySplashBinding;
 

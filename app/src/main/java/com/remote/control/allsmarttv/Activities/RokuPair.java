@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.remote.control.allsmarttv.R;
+import com.remote.control.allsmarttv.appUi.FirstActivity;
 import com.remote.control.allsmarttv.utils.AvailTvs;
 import com.remote.control.allsmarttv.utils.Device_rokuTv;
 import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;

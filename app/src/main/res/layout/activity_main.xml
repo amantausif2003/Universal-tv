@@ -5,18 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layoutDirection="ltr">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background"
         android:descendantFocusability="beforeDescendants"
         android:focusableInTouchMode="true"
         android:layoutDirection="ltr"
-        tools:context=".Activities.FirstActivity">
+        tools:context=".appUi.FirstActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_main"
@@ -360,6 +358,16 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include layout="@layout/nav_layout" />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:clipToPadding="false"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@color/colorOnPrimary"
+        app:itemTextColor="@color/colorOnPrimary"
+        app:menu="@menu/main_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

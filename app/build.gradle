@@ -130,9 +130,11 @@ dependencies {
 
     implementation 'com.google.android.gms:play-services-ads:20.5.0'
 
-    implementation platform('com.google.firebase:firebase-bom:29.0.3')
-    implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-crashlytics'
+    // Add dependency google
+    implementation "com.google.firebase:firebase-crashlytics:18.3.2"
+    implementation "com.google.firebase:firebase-analytics-ktx:21.2.0"
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+
     //for gif view library
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
 

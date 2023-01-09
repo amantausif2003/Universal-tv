@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.remote.control.allsmarttv.R;
+import com.remote.control.allsmarttv.appUi.FirstActivity;
 import com.remote.control.allsmarttv.utils.Remote_model;
 import com.remote.control.allsmarttv.utils.RemoteAdapter;
 import com.remote.control.allsmarttv.utils.ir_utils.SupportedClass;
