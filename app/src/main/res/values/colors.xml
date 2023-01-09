@@ -18,7 +18,7 @@
     <color name="colorError">#ff4c5d</color>
 
     <color name="colorPrimaryDark">#141519</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAccent">#F60061</color>
 
     <color name="colorOnPrimary">@android:color/white</color>
     <color name="colorOnSecondary">@android:color/white</color>
@@ -26,5 +26,6 @@
     <color name="white">@android:color/white</color>
     <color name="black">@android:color/black</color>
     <color name="transparent">@android:color/transparent</color>
+
 
 </resources>

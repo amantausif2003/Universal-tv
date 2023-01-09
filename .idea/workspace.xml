@@ -33,83 +33,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98523c0e-5a26-430f-9df3-0da79877d9af" name="Default Changelist" comment="set original ads an d loader in app. and also set banner ad on Tv_list activity.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_2_4_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_4_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_3_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_3_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_3_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_6_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__pub_devrel_easypermissions_3_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/appUi/PermActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_3_6_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nabinbhandari_android_permissions_3_8_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Universal_TV_Remote.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Universal_TV_Remote.app.androidTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Universal_TV_Remote.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Universal_TV_Remote.app.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Universal_TV_Remote.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Universal_TV_Remote.app.unitTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/PermActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/RemoteActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/RemoteActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/StartingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/Activities/StartingScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/appUi/FirstActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/appUi/FirstActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/utils/ir_utils/SupportedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/utils/ir_utils/SupportedClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/utils/sonyPicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/utils/sonyPicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/connection_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/connection_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dialog_rounded_corner_white.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dialog_rounded_corner_white.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/remote_update_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/remote_update_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roku_btn_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roku_btn_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roku_for.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roku_for.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roku_key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roku_key.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roku_keyboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roku_keyboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roku_play.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roku_play.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roku_rew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roku_rew.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/search_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/search_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_apps.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_apps.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lg_wifi_remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lg_wifi_remote.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_permission.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_permission.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_remote_name.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_remote_name.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/api_loader.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/api_loader.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/device_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/device_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_device.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_device.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ime_lay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ime_lay.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ir_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ir_dialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/key_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/key_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/remote_update_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/remote_update_dialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/roku_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/roku_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/roku_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/roku_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/roku_pairing_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/roku_pairing_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/search_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/appUi/PermActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/remote/control/allsmarttv/appUi/PermActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/style.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/style.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/style.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -36,8 +36,8 @@ android {
         //noinspection OldTargetApi
         targetSdkVersion 32
 
-        versionCode 37
-        versionName "37"
+        versionCode 38
+        versionName "38"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

@@ -15,8 +15,7 @@ class PermActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
     private lateinit var mainBinding: ActivityPermissionBinding
 
     var permission = arrayOf(
-        Manifest.permission.ACCESS_FINE_LOCATION,
-        Manifest.permission.ACCESS_COARSE_LOCATION
+        Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +36,7 @@ class PermActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
             finish()
         } else {
             EasyPermissions.requestPermissions(
-                this@PermActivity,
-                "Please allow permissions to proceed further",
-                1010,
-                *permission
+                this@PermActivity, "Please allow permissions to proceed further", 1010, *permission
             )
         }
     }

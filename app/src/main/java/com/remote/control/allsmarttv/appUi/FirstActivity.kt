@@ -79,18 +79,11 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
                         startActivity(
                             Intent(
                                 Intent.ACTION_VIEW,
-                                Uri.parse("market://search?q=pub:SerpSkills")
+                                Uri.parse("https://play.google.com/store/apps/developer?id=Game_Arcade")
                             )
                         )
                     } catch (ex: ActivityNotFoundException) {
                         ex.printStackTrace()
-                        //replace &quot;Unified+Apps&quot; with your developer name
-                        startActivity(
-                            Intent(
-                                Intent.ACTION_VIEW,
-                                Uri.parse("https://play.google.com/store/apps/developer?id=SerpSkills")
-                            )
-                        )
                     }
                 }
             }
