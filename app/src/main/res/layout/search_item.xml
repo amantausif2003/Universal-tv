@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layoutDirection="ltr"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -15,7 +14,7 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:gravity="center"
-        app:cardBackgroundColor="@color/app"
+        app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="@dimen/_6sdp">
 
         <RelativeLayout

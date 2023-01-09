@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_45sdp"
         android:layout_alignParentTop="true"
-        android:background="@color/app">
+        android:background="@color/colorPrimary">
 
         <ImageView
             android:id="@+id/roku_remote_back"
@@ -22,8 +22,8 @@
             android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
             android:layout_marginStart="@dimen/_16sdp"
-            android:src="@drawable/backk"
-            android:contentDescription="@null"/>
+            android:contentDescription="@null"
+            android:src="@drawable/backk" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -242,7 +242,7 @@
                 android:background="@drawable/roku_btn_bg"
                 android:elevation="@dimen/_5sdp"
                 android:text="@string/ring_remote"
-                android:textColor="@color/app"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/_8sdp"
                 android:textStyle="bold" />
 
@@ -269,7 +269,7 @@
                 android:background="@drawable/roku_btn_bg"
                 android:elevation="@dimen/_5sdp"
                 android:text="@string/apps"
-                android:textColor="@color/app"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/_8sdp"
                 android:textStyle="bold" />
 

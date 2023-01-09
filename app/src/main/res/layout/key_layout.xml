@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_80sdp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/app"
     android:layout_gravity="center"
-    android:layoutDirection="ltr"
+    android:background="@color/colorPrimary"
     android:gravity="center"
+    android:layoutDirection="ltr"
     android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:src="@drawable/roku_keyboard"
         android:layout_marginStart="@dimen/_8sdp"
-        android:scaleType="center"/>
+        android:scaleType="center"
+        android:src="@drawable/roku_keyboard" />
 
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
-        android:fontFamily="@font/roboto"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:textCursorDrawable="@color/white"
-        app:backgroundTint="@color/white"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:textColor="@color/white"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"/>
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@color/white"
+        app:backgroundTint="@color/white" />
 
 </LinearLayout>

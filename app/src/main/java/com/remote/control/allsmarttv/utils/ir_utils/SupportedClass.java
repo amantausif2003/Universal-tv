@@ -21,6 +21,7 @@ import com.remote.control.allsmarttv.R;
 import java.util.Locale;
 
 public class SupportedClass {
+
     public static String FEEDBACK_EMAIL = "admin@serpskills.com";
 
     public static boolean checkConnection(Context mContext) {
@@ -101,13 +102,13 @@ public class SupportedClass {
                 context.getResources().getString(R.string.vietnamese)};
 
 
-        AlertDialog.Builder dialog = new AlertDialog.Builder(context, R.style.Dialog);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(context);
 
         TextView textView = new TextView(context);
         textView.setText(context.getResources().getString(R.string.choose));
         textView.setPadding(30, 30, 30, 30);
         textView.setTextSize(20F);
-        textView.setBackgroundColor(context.getResources().getColor(R.color.app));
+        textView.setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
         textView.setTextColor(Color.WHITE);
 
         dialog.setCustomTitle(textView);

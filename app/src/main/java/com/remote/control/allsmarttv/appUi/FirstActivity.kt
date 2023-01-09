@@ -10,11 +10,9 @@ import android.util.DisplayMetrics
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.FrameLayout
-import android.widget.RelativeLayout
 import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
@@ -39,28 +37,67 @@ import com.remote.control.allsmarttv.utils.Util.showToast
 class FirstActivity : AppCompatActivity(), CallBackInterstitial {
 
     private var isBtnClicked = 0
-
-    var drawerToggle: ActionBarDrawerToggle? = null
-
-   /* var button_privacy: RelativeLayout? = null
-    var button_rate: RelativeLayout? = null
-    var button_more: RelativeLayout? = null
-    var button_share: RelativeLayout? = null
-    var button_feedback: RelativeLayout? = null*/
-
-    private var adLayout: FrameLayout? = null
-
-    lateinit var activityMainBinding: ActivityMainBinding
+    private lateinit var mainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         SupportedClass.loadLangLocale(baseContext)
-        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(activityMainBinding.root)
+        mainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(mainBinding.root)
 
-        adLayout = findViewById(R.id.adLayout)
+        mainBinding.menuBtn.setOnClickListener {
+            mainBinding.drawerLayout.openDrawer(GravityCompat.START)
+        }
 
-        activityMainBinding.language.setOnClickListener {
+        mainBinding.navigationView.setNavigationItemSelectedListener {
+
+            when (it.itemId) {
+
+                R.id.nav_privacy -> {
+                    try {
+                        val uri =
+                            Uri.parse("https://docs.google.com/document/d/1bYIMnAVAwPrN0vGs9pZ8mSYP6MWgb-zhH7uQpLgyS8U/edit")
+                        val intent = Intent(Intent.ACTION_VIEW)
+                        intent.data = uri
+                        startActivity(intent)
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
+                R.id.nav_share -> {
+                    SupportedClass.shareApp(this@FirstActivity)
+                }
+                R.id.nav_rate -> {
+                    SupportedClass.rateApp(this@FirstActivity)
+                }
+                R.id.nav_feed_back -> {
+                    SupportedClass.feedback(this@FirstActivity)
+                }
+                R.id.nav_more_app -> {
+                    try {
+                        //replace &quot;Unified+Apps&quot; with your developer name
+                        startActivity(
+                            Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse("market://search?q=pub:SerpSkills")
+                            )
+                        )
+                    } catch (ex: ActivityNotFoundException) {
+                        ex.printStackTrace()
+                        //replace &quot;Unified+Apps&quot; with your developer name
+                        startActivity(
+                            Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse("https://play.google.com/store/apps/developer?id=SerpSkills")
+                            )
+                        )
+                    }
+                }
+            }
+            true
+        }
+
+        mainBinding.language.setOnClickListener {
             try {
                 SupportedClass.langDialog(this@FirstActivity, this@FirstActivity)
             } catch (ex: Exception) {
@@ -72,70 +109,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
 
         loadBanner()
 
-        /*button_privacy = findViewById(R.id.btn_privacy)
-        button_rate = findViewById(R.id.btn_rate)
-        button_share = findViewById(R.id.btn_share)
-        button_feedback = findViewById(R.id.btn_feed)
-        button_more = findViewById(R.id.btn_more)
-
-        button_privacy?.setOnClickListener {
-            try {
-                val uri =
-                    Uri.parse("https://docs.google.com/document/d/1bYIMnAVAwPrN0vGs9pZ8mSYP6MWgb-zhH7uQpLgyS8U/edit")
-                val intent = Intent(Intent.ACTION_VIEW)
-                intent.data = uri
-                startActivity(intent)
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-        }
-
-        button_rate?.setOnClickListener { SupportedClass.rateApp(this@FirstActivity) }
-
-        button_more?.setOnClickListener {
-            try {
-                //replace &quot;Unified+Apps&quot; with your developer name
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("market://search?q=pub:SerpSkills")
-                    )
-                )
-            } catch (anfe: ActivityNotFoundException) {
-                //replace &quot;Unified+Apps&quot; with your developer name
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://play.google.com/store/apps/developer?id=SerpSkills")
-                    )
-                )
-            }
-        }
-
-        button_share?.setOnClickListener { SupportedClass.shareApp(this@FirstActivity) }
-
-        button_feedback?.setOnClickListener { SupportedClass.feedback(this@FirstActivity) }*/
-
-        drawerToggle = object : ActionBarDrawerToggle(
-            this,
-            activityMainBinding.drawerLayout,
-            activityMainBinding.toolbarMain,
-            R.string.app_name,
-            R.string.app_name
-        ) {
-            override fun onDrawerClosed(view: View) {
-                supportInvalidateOptionsMenu()
-            }
-
-            override fun onDrawerOpened(drawerView: View) {
-                supportInvalidateOptionsMenu()
-            }
-        }
-
-        drawerToggle?.setDrawerIndicatorEnabled(true)
-        activityMainBinding.drawerLayout.setDrawerListener(drawerToggle)
-        activityMainBinding.toolbarMain.setNavigationIcon(R.drawable.draw_icon)
-        activityMainBinding.samsungTv.setOnClickListener {
+        mainBinding.samsungTv.setOnClickListener {
             if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 0
                 if (isInterstialLoaded()) {
@@ -149,7 +123,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }
         }
 
-        activityMainBinding.sony.setOnClickListener {
+        mainBinding.sony.setOnClickListener {
             if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 1
                 if (isInterstialLoaded()) {
@@ -162,7 +136,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
                     .show()
             }
         }
-        activityMainBinding.addRemote.setOnClickListener {
+        mainBinding.addRemote.setOnClickListener {
             if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 2
                 if (isInterstialLoaded()) {
@@ -175,7 +149,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
                     .show()
             }
         }
-        activityMainBinding.androidTv.setOnClickListener {
+        mainBinding.androidTv.setOnClickListener {
             showToast(this, "Up Coming")
             /*if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 3
@@ -190,7 +164,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }*/
         }
 
-        activityMainBinding.rokuTv.setOnClickListener {
+        mainBinding.rokuTv.setOnClickListener {
 
             showToast(this, "Up Coming")
 
@@ -208,7 +182,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
 
         }
 
-        activityMainBinding.lgTv.setOnClickListener {
+        mainBinding.lgTv.setOnClickListener {
 
             showToast(this, "Up Coming")
 
@@ -225,7 +199,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }*/
         }
 
-        activityMainBinding.irRemote.setOnClickListener {
+        mainBinding.irRemote.setOnClickListener {
 
             showToast(this, "Up Coming")
 
@@ -246,8 +220,8 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
 
     /**************************************Banner Ads *********************************/
     fun bannerAds() {
-        adLayout?.visibility = View.VISIBLE
-        adLayout?.post { loadBanner() }
+        mainBinding.adLayout.visibility = View.VISIBLE
+        mainBinding.adLayout.post { loadBanner() }
     }
 
     private fun loadBanner() {
@@ -256,7 +230,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         adView.adUnitId = AdManager.getBannerID()
         val adSize = adSize
         adView.setAdSize(adSize)
-        adLayout?.addView(adView)
+        mainBinding.adLayout.addView(adView)
         val adRequest = AdRequest.Builder().build()
         // Start loading the ad in the background.
         try {
@@ -275,7 +249,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             val outMetrics = DisplayMetrics()
             display.getMetrics(outMetrics)
             val density = outMetrics.density
-            var adWidthPixels = adLayout!!.width.toFloat()
+            var adWidthPixels = mainBinding.adLayout.width.toFloat()
             // If the ad hasn't been laid out, default to the full screen width.
             if (adWidthPixels == 0f) {
                 adWidthPixels = outMetrics.widthPixels.toFloat()
@@ -285,7 +259,11 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         }
 
     override fun onBackPressed() {
-        finishAffinity()
+        if (mainBinding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mainBinding.drawerLayout.closeDrawer(GravityCompat.START)
+        } else {
+            finishAffinity()
+        }
     }
 
     private fun moveToRequireActivity() {
@@ -332,13 +310,13 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         }
     }
 
-    fun showIrDialog() {
+    private fun showIrDialog() {
         val irDialog = Dialog(this)
         irDialog.setContentView(R.layout.ir_dialog)
         irDialog.setCancelable(false)
         irDialog.window!!.setBackgroundDrawableResource(android.R.color.transparent)
         val goBack = irDialog.findViewById<Button>(R.id.go_back)
-        goBack.setOnClickListener { v: View? ->
+        goBack.setOnClickListener {
             if (irDialog.isShowing && !isFinishing) {
                 irDialog.dismiss()
             }

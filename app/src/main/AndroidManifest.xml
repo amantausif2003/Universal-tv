@@ -34,8 +34,9 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@drawable/circle_logo"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.UniversalTVRemote">
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme.Custom"
+        tools:replace="android:supportsRtl">
 
         <activity
             android:name=".irtv.TCLRemote"
@@ -52,7 +53,7 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.PermActivity"
+            android:name=".appUi.PermActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"

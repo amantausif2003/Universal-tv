@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="app">#646C71</color>
-
     <color name="not_recording">#4081f5</color>
     <color name="recording">#c0505f</color>
     <color name="ime_unfocused">#99FFFFFF</color>
@@ -20,8 +11,8 @@
     <color name="colorPrimary">#646C71</color>
     <color name="colorPrimaryVariant">#646C71</color>
 
-    <color name="colorSecondary">#646C71</color>
-    <color name="colorSecondaryVariant">#646C71</color>
+    <color name="colorSecondary">#f60061</color>
+    <color name="colorSecondaryVariant">#f60061</color>
 
     <color name="colorBackground">#4E575D</color>
     <color name="colorError">#ff4c5d</color>
@@ -31,5 +22,9 @@
 
     <color name="colorOnPrimary">@android:color/white</color>
     <color name="colorOnSecondary">@android:color/white</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="transparent">@android:color/transparent</color>
 
 </resources>

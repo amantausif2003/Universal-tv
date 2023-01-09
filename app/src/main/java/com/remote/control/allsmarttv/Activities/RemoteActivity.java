@@ -43,6 +43,7 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 import com.remote.control.allsmarttv.appUi.FirstActivity;
+import com.remote.control.allsmarttv.appUi.PermActivity;
 import com.remote.control.allsmarttv.utils.ImeListenerCall;
 import com.remote.control.allsmarttv.Fragments.ConnFrag;
 import com.remote.control.allsmarttv.Fragments.DeviceFragment;

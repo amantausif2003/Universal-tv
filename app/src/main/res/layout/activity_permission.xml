@@ -4,63 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app"
-    android:layoutDirection="ltr"
-    tools:context=".Activities.PermActivity">
+    tools:context=".appUi.PermActivity">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Device Location Permission"
-        android:textSize="@dimen/_16sdp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:letterSpacing="0"
-        android:gravity="center"
-        android:layout_marginEnd="@dimen/_2sdp"
-        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/roboto"
-        android:textStyle="bold"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:text="Device Location Permission"
         android:textColor="#ffffff"
-        android:layout_marginTop="@dimen/_120sdp"/>
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
     <TextView
         android:id="@+id/txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:letterSpacing="0"
-        app:layout_constraintTop_toBottomOf="@+id/text"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/guide1"
         android:text="This app needs your location permission to find TV"
         android:textColor="#ffffff"
-        android:textSize="@dimen/_12sdp" />
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guide1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
     <Button
         android:id="@+id/btn_perm"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_40sdp"
-        app:layout_constraintTop_toBottomOf="@+id/guide1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Allow Permission"
-        android:textAllCaps="false"
+        android:background="@drawable/permission_button"
         android:elevation="@dimen/_10sdp"
         android:fontFamily="@font/roboto"
-        android:textStyle="bold"
-        android:background="@drawable/permission_button"
+        android:text="Allow Permission"
+        android:textAllCaps="false"
         android:textSize="@dimen/_14sdp"
-        android:textColor="@color/app"/>
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guide1" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -68,8 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.36"/>
-
+        app:layout_constraintGuide_percent="0.36" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/remote_bg"
     android:clipChildren="false"
     android:layoutDirection="ltr"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".Activities.LgWifiRemoteActivity">
 
     <RelativeLayout
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_45sdp"
         android:layout_alignParentTop="true"
-        android:background="@color/app">
+        android:background="@color/colorPrimary">
 
         <ImageView
             android:id="@+id/lg_remote_back"
@@ -426,13 +426,13 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/relative6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/relative6"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_below="@+id/relative3"
             android:layout_marginStart="@dimen/_20sdp"
-            android:layout_below="@+id/relative3">
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp">
 
 
             <ImageView

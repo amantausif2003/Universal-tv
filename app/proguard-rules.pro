@@ -23,3 +23,7 @@
 
 -keep public class * extends java.lang.Exception
 -keep class com.connectsdk.**       { * ; }
+
+-keepclassmembers class * {
+    @pub.devrel.easypermissions.AfterPermissionGranted <methods>;
+}

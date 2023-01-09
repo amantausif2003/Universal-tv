@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:clickable="true"
-    android:clipChildren="false"
     android:layout_width="match_parent"
-    android:layoutDirection="ltr"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:clipChildren="false">
 
-   <RelativeLayout
-        android:background="@color/app"
-        android:padding="@dimen/_16sdp"
-        android:clickable="true"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:padding="@dimen/_16sdp">
 
-       <ImageView
-           android:id="@+id/key_icon"
-           android:layout_width="@dimen/_40sdp"
-           android:layout_height="@dimen/_40sdp"
-           android:layout_centerVertical="true"
-           android:scaleType="center"
-           android:src="@drawable/roku_keyboard" />
+        <ImageView
+            android:id="@+id/key_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/roku_keyboard" />
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8sdp"
-            android:layout_toEndOf="@+id/key_icon">
+            android:layout_toEndOf="@+id/key_icon"
+            android:orientation="vertical">
 
             <TextView
-                android:textSize="@dimen/_10sdp"
-                android:textColor="#cccccc"
-                android:fontFamily="@font/roboto"
                 android:id="@+id/text_hint"
-                android:text="@string/enter_the_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"/>
-
-            <com.remote.control.allsmarttv.utils.ImeUtil
-                android:textSize="@dimen/_16sdp"
-                android:textColor="@color/white"
-                android:id="@+id/ime"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/enter_the_text"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.remote.control.allsmarttv.utils.ImeUtil
+                android:id="@+id/ime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:imeOptions="flagNoExtractUi"
-                android:textCursorDrawable="@null"/>
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_16sdp" />
 
             <View
-                android:background="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_1sdp"
                 android:layout_marginTop="@dimen/_6sdp"
-                android:layout_marginBottom="@dimen/_8sdp"/>
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="#ffffff" />
 
         </LinearLayout>
     </RelativeLayout>

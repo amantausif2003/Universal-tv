@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme.Custom" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorError">@color/colorError</item>
+
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="colorOnError">@android:color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+    </style>
+
+    <!--<style name="image_layout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photo_select</item>
+    </style>-->
+
+    <!--<style name="dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_shp</item>
+        <item name="colorControlNormal">@color/app</item>
+        <item name="colorControlActivated">@color/app</item>
+        <item name="colorControlHighlight">@color/app</item>
+    </style>-->
+
+    <!--<style name="Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorControlNormal">#303030</item>
+        <item name="colorControlActivated">#303030</item>
+        <item name="colorControlHighlight">@color/app</item>
+    </style>-->
+
+</resources>

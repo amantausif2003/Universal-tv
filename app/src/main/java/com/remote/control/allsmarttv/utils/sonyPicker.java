@@ -50,7 +50,7 @@ public class sonyPicker {
     /**
      * This method will return an AlertDialog that contains a ListView with an item for each discovered ConnectableDevice.
      *
-     * @param message The title for the AlertDialog
+     * @param message  The title for the AlertDialog
      * @param listener The listener for the ListView to get the item that was clicked on
      */
     public AlertDialog getPickerDialog(String message, final AdapterView.OnItemClickListener listener) {
@@ -59,7 +59,7 @@ public class sonyPicker {
         TextView title = (TextView) activity.getLayoutInflater().inflate(android.R.layout.simple_list_item_1, null);
         title.setText(message);
 
-        final AlertDialog pickerDialog = new AlertDialog.Builder(activity, R.style.dialog)
+        final AlertDialog pickerDialog = new AlertDialog.Builder(activity)
                 .setCustomTitle(title)
                 .setCancelable(true)
                 .setView(view)

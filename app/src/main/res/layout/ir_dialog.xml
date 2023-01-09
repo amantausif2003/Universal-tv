@@ -48,7 +48,7 @@
                 android:background="@drawable/ir_btn_rounded"
                 android:layout_centerHorizontal="true"
                 android:textAllCaps="false"
-                android:textColor="@color/app"
+                android:textColor="@color/colorPrimary"
                 android:layout_below="@+id/exist"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:textSize="17sp"
