@@ -6,7 +6,7 @@ import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.remote.control.allsmarttv.BuildConfig
-import com.remote.control.allsmarttv.utils.ir_utils.TVRemoteApplication
+import com.remote.control.allsmarttv.utils.ir_utils.App
 
 object AdManager {
 
@@ -28,7 +28,7 @@ object AdManager {
     private const val myTag: String = "myInterstitialAds"
     private var InterstitialStatus: Boolean = true
 
-    var bannerStatusId: Boolean = false
+    private var bannerStatusId: Boolean = false
 
     fun getBannerID(): String {
         return if (BuildConfig.DEBUG) {
@@ -65,7 +65,7 @@ object AdManager {
         if (mInterstitialAd == null) {
 
             InterstitialAd.load(
-                TVRemoteApplication.context,
+                App.context,
                 interstitialAds,
                 adRequest,
                 object : InterstitialAdLoadCallback() {

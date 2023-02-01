@@ -47,7 +47,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.remote.control.allsmarttv.Activities.RemoteActivity;
+import com.remote.control.allsmarttv.activitiesUi.RemoteActivity;
 import com.remote.control.allsmarttv.utils.ImeListenerCall;
 import com.remote.control.allsmarttv.utils.OnRemoteListener;
 import com.remote.control.allsmarttv.R;

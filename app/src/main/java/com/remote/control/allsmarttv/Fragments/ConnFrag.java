@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
-import com.remote.control.allsmarttv.Activities.RemoteActivity;
+import com.remote.control.allsmarttv.activitiesUi.RemoteActivity;
 import com.remote.control.allsmarttv.R;
 
 public class ConnFrag extends Fragment {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ir_background"
     android:layoutDirection="ltr"
-    tools:context=".Activities.ir.RokuRemote">
+    tools:context=".activitiesUi.ir.RokuRemote">
 
     <RelativeLayout
         android:layout_width="match_parent"

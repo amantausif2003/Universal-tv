@@ -15,7 +15,7 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.remote.control.allsmarttv.Activities.StartingScreen;
+import com.remote.control.allsmarttv.activitiesUi.StartingScreen;
 import com.remote.control.allsmarttv.R;
 
 import java.util.Locale;

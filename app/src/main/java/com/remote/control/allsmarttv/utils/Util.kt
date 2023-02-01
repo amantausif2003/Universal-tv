@@ -2,13 +2,25 @@ package com.remote.control.allsmarttv.utils
 
 import android.app.Activity
 import android.content.Context
+import android.content.SharedPreferences
 import android.os.Build
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.util.Log
 import android.widget.Toast
+import com.remote.control.allsmarttv.utils.ir_utils.App
 
 object Util {
+
+    //This variable show Force Update dialog
+    const val show_banner: String = "show_banner"
+    const val show_interstitial: String = "show_interstitial"
+
+    @JvmStatic
+    var showBanner: Boolean  = false
+
+    @JvmStatic
+    var showInterstitial: Boolean  = false
 
     @Suppress("USELESS_CAST")
     @JvmStatic
@@ -25,6 +37,25 @@ object Util {
         }
     }
 
+    @JvmStatic
+    fun setSharedPreferences(keyShare: String, values: String?) {
+        val editor: SharedPreferences.Editor = App.context.getSharedPreferences(
+            "TV",
+            Context.MODE_PRIVATE
+        ).edit()
+        editor.putString(keyShare, "${values}")
+        editor.apply()
+    }
+
+    @JvmStatic
+    fun getSharedPreferences(keyShare: String): String {
+        val prefs: SharedPreferences = App.context.getSharedPreferences(
+            "TV",
+            Context.MODE_PRIVATE
+        )
+        val keyVal = prefs.getString(keyShare, "false") //"No name defined" is the default value.
+        return keyVal.toString()
+    }
 
     @Suppress("DEPRECATION")
     fun vibrateDevice(context: Context) {

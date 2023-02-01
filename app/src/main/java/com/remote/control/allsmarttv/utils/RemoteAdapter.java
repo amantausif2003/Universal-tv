@@ -13,9 +13,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.remote.control.allsmarttv.Activities.LgWifiRemoteActivity;
-import com.remote.control.allsmarttv.Activities.RemoteActivity;
-import com.remote.control.allsmarttv.Activities.RokuPair;
+import com.remote.control.allsmarttv.activitiesUi.LgWifiRemoteActivity;
+import com.remote.control.allsmarttv.activitiesUi.RemoteActivity;
+import com.remote.control.allsmarttv.activitiesUi.RokuPair;
 import com.remote.control.allsmarttv.R;
 
 import java.util.ArrayList;

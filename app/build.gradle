@@ -113,6 +113,7 @@ dependencies {
     //noinspection GradleDependency
     implementation "com.google.android.material:material:1.6.0"
 
+
     def appcompat_version = "1.4.2"
     //noinspection GradleDependency
     implementation "androidx.appcompat:appcompat:$appcompat_version"
@@ -135,11 +136,12 @@ dependencies {
     //multi dex enabled////// libraries for IR Remote
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
 
     // Add dependency google
     implementation "com.google.firebase:firebase-crashlytics:18.3.2"
     implementation "com.google.firebase:firebase-analytics-ktx:21.2.0"
+    implementation 'com.google.firebase:firebase-config-ktx:21.2.1'
     implementation 'com.google.firebase:firebase-core:21.1.1'
 
     // For developers using AndroidX in their applications
@@ -147,5 +149,7 @@ dependencies {
 
     //for gif view library
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+
+    implementation "com.github.jumadeveloper:networkmanager:0.0.2"
 
 }

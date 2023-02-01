@@ -27,7 +27,7 @@
         android:required="false" />
 
     <application
-        android:name=".utils.ir_utils.TVRemoteApplication"
+        android:name=".utils.ir_utils.App"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/logo"
@@ -46,7 +46,7 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.LgWifiRemoteActivity"
+            android:name=".activitiesUi.LgWifiRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -60,35 +60,35 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.Roku_Remote"
+            android:name=".activitiesUi.Roku_Remote"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.Tv_list"
+            android:name=".activitiesUi.Tv_list"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.Roku_Apps"
+            android:name=".activitiesUi.Roku_Apps"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.RokuPair"
+            android:name=".activitiesUi.RokuPair"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.RemoteActivity"
+            android:name=".activitiesUi.RemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -104,7 +104,7 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.StartingScreen"
+            android:name=".activitiesUi.StartingScreen"
             android:configChanges="orientation"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -117,63 +117,63 @@
         </activity> <!-- //Ir activities -->
 
         <activity
-            android:name=".Activities.ir.MitsubishiRemoteActivity"
+            android:name=".activitiesUi.ir.MitsubishiRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.PhilipsActivity"
+            android:name=".activitiesUi.ir.PhilipsActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.InsigniaRemoteActivity"
+            android:name=".activitiesUi.ir.InsigniaRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.HaireRemoteActivity"
+            android:name=".activitiesUi.ir.HaireRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.ZenithActivity"
+            android:name=".activitiesUi.ir.ZenithActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.HitachiRemoteActivity"
+            android:name=".activitiesUi.ir.HitachiRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.ToshibaRemoteActivity"
+            android:name=".activitiesUi.ir.ToshibaRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.JVCRemoteActivity"
+            android:name=".activitiesUi.ir.JVCRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.RokuRemote"
+            android:name=".activitiesUi.ir.RokuRemote"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -187,14 +187,14 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.PanasonicRemoteActivity"
+            android:name=".activitiesUi.ir.PanasonicRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.RemoteNameActivity"
+            android:name=".activitiesUi.ir.RemoteNameActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -208,7 +208,7 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".Activities.ir.LGIRRemoteActivity"
+            android:name=".activitiesUi.ir.LGIRRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -225,6 +225,14 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3043189731871157~5024379433" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
 
     </application>
 

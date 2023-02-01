@@ -17,10 +17,10 @@ import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.remote.control.allsmarttv.Activities.LgWifiRemoteActivity
-import com.remote.control.allsmarttv.Activities.RemoteActivity
-import com.remote.control.allsmarttv.Activities.RokuPair
-import com.remote.control.allsmarttv.Activities.ir.RemoteNameActivity
+import com.remote.control.allsmarttv.activitiesUi.LgWifiRemoteActivity
+import com.remote.control.allsmarttv.activitiesUi.RemoteActivity
+import com.remote.control.allsmarttv.activitiesUi.RokuPair
+import com.remote.control.allsmarttv.activitiesUi.ir.RemoteNameActivity
 import com.remote.control.allsmarttv.irtv.SamsungRemoteActivity
 import com.remote.control.allsmarttv.irtv.SonyRemote
 import com.remote.control.allsmarttv.R
@@ -32,6 +32,7 @@ import com.remote.control.allsmarttv.adManager.AdManager.loadInterstitialAd
 import com.remote.control.allsmarttv.adManager.AdManager.showInterstitial
 import com.remote.control.allsmarttv.databinding.ActivityMainBinding
 import com.remote.control.allsmarttv.irtv.TCLRemote
+import com.remote.control.allsmarttv.utils.Util
 import com.remote.control.allsmarttv.utils.Util.showToast
 
 class FirstActivity : AppCompatActivity(), CallBackInterstitial {
@@ -98,14 +99,22 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }
         }
 
-        loadInterstitialAd()
+        if (Util.showInterstitial) {
+            loadInterstitialAd()
+        }
 
-        loadBanner()
+        Log.d("myBanner","${Util.showBanner}")
+
+        if (Util.showBanner) {
+            bannerAds()
+        } else {
+            mainBinding.adLayout.visibility = View.GONE
+        }
 
         mainBinding.samsungTv.setOnClickListener {
             if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 0
-                if (isInterstialLoaded()) {
+                if (Util.showInterstitial && isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
                 } else {
                     moveToRequireActivity()
@@ -119,7 +128,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         mainBinding.sony.setOnClickListener {
             if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 1
-                if (isInterstialLoaded()) {
+                if (Util.showInterstitial && isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
                 } else {
                     moveToRequireActivity()
@@ -132,7 +141,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         mainBinding.addRemote.setOnClickListener {
             if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 2
-                if (isInterstialLoaded()) {
+                if (Util.showInterstitial && isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
                 } else {
                     moveToRequireActivity()
@@ -211,8 +220,9 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
 
     }
 
+
     /**************************************Banner Ads *********************************/
-    fun bannerAds() {
+    private fun bannerAds() {
         mainBinding.adLayout.visibility = View.VISIBLE
         mainBinding.adLayout.post { loadBanner() }
     }

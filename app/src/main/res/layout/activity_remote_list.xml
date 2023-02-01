@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
     android:orientation="vertical"
-    tools:context=".Activities.Tv_list">
+    tools:context=".activitiesUi.Tv_list">
 
     <LinearLayout
         android:id="@+id/line11"

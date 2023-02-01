@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
     android:background="@drawable/ir_background"
-    tools:context=".Activities.ir.PhilipsActivity">
+    tools:context=".activitiesUi.ir.PhilipsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

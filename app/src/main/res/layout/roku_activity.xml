@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/remote_bg"
     android:layoutDirection="ltr"
-    tools:context=".Activities.Roku_Remote">
+    tools:context=".activitiesUi.Roku_Remote">
 
     <RelativeLayout
         android:id="@+id/layout"

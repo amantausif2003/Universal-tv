@@ -1,6 +1,6 @@
 package com.remote.control.allsmarttv.utils;
 
-import static com.remote.control.allsmarttv.Activities.RokuPair.deviceRoku;
+import static com.remote.control.allsmarttv.activitiesUi.RokuPair.deviceRoku;
 
 public class RokuCmds {
 

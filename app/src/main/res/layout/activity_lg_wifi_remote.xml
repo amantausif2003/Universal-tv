@@ -7,7 +7,7 @@
     android:background="@drawable/remote_bg"
     android:clipChildren="false"
     android:layoutDirection="ltr"
-    tools:context=".Activities.LgWifiRemoteActivity">
+    tools:context=".activitiesUi.LgWifiRemoteActivity">
 
     <RelativeLayout
         android:id="@+id/layout"
