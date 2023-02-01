@@ -62,7 +62,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8e9c38003ba0c9cd43342b78a04fd92f/transformed/jetified-play-services-location-19.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/166010777d75adbff56a73e1cabb6dae/transformed/jetified-play-services-appset-16.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c23e0fa0c843950ab6b6e05b5205f48e/transformed/jetified-play-services-base-18.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/45bb2b24a86b698b998b335db44a22a1/transformed/jetified-firebase-crashlytics-18.3.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/d8bd573421d91cbe31ae3c0e3067e87c/transformed/jetified-firebase-crashlytics-18.3.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/f81079e13b930919f3eacc3e1a58dbc1/transformed/jetified-firebase-config-21.2.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b02fc6644cd8027bb55b6ba5aa8a301a/transformed/jetified-firebase-core-21.1.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/058c458956f239937c45528541e5e5cb/transformed/jetified-firebase-analytics-21.2.0-api.jar</arg>
@@ -284,7 +284,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-measurement-base:21.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.ump:user-messaging-platform:2.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-appset:16.0.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-crashlytics:18.3.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-crashlytics:18.3.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-api:3.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-backend-cct:3.1.8@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-runtime:3.1.8@aar" level="project" />

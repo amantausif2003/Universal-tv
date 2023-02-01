@@ -17,10 +17,10 @@ object Util {
     const val show_interstitial: String = "show_interstitial"
 
     @JvmStatic
-    var showBanner: Boolean  = false
+    var showBanner: Boolean = false
 
     @JvmStatic
-    var showInterstitial: Boolean  = false
+    var showInterstitial: Boolean = false
 
     @Suppress("USELESS_CAST")
     @JvmStatic

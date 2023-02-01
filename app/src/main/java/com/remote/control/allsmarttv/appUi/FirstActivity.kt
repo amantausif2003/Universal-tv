@@ -99,11 +99,11 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }
         }
 
+        Log.d("myInterstitial","${Util.showInterstitial}")
+
         if (Util.showInterstitial) {
             loadInterstitialAd()
         }
-
-        Log.d("myBanner","${Util.showBanner}")
 
         if (Util.showBanner) {
             bannerAds()

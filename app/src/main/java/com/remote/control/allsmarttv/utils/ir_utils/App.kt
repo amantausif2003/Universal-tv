@@ -29,7 +29,7 @@ class App : MultiDexApplication() {
                 FirebaseRemoteConfigUtils(object : FirebaseRemoteConfigUtils.RemoteConfigCallBacks {
                     override fun remoteConfigInitilized(firebaseRemoteConfig: FirebaseRemoteConfig) {
 
-                        Log.d("myTag","${firebaseRemoteConfig.getBoolean(Util.show_banner)}")
+                        Log.d("adsControl","${firebaseRemoteConfig.getBoolean(Util.show_banner)} -- ${firebaseRemoteConfig.getBoolean(Util.show_interstitial)}")
 
                         Util.setSharedPreferences(
                             Util.show_banner,
