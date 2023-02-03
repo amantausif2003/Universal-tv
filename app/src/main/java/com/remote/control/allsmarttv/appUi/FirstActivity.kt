@@ -152,8 +152,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             }
         }
         mainBinding.androidTv.setOnClickListener {
-            showToast(this, "Up Coming")
-            /*if (SupportedClass.checkConnection(this@FirstActivity)) {
+            if (SupportedClass.checkConnection(this@FirstActivity)) {
                 isBtnClicked = 3
                 if (isInterstialLoaded()) {
                     showInterstitial(this@FirstActivity, this@FirstActivity)
@@ -163,7 +162,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
             } else {
                 Toast.makeText(this@FirstActivity, R.string.check_internet, Toast.LENGTH_SHORT)
                     .show()
-            }*/
+            }
         }
 
         mainBinding.rokuTv.setOnClickListener {
@@ -287,7 +286,7 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
         }
 
         if (isBtnClicked == 3) {
-            startActivity(Intent(this@FirstActivity, RemoteActivity::class.java))
+            startActivity(Intent(this@FirstActivity, WifiScreen::class.java))
         }
         if (isBtnClicked == 4) {
             startActivity(Intent(this@FirstActivity, RokuPair::class.java))

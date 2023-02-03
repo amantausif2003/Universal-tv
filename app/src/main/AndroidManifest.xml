@@ -17,7 +17,6 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-
     <uses-permission
         android:name="android.permission.TRANSMIT_IR"
         android:required="false" />
@@ -37,6 +36,13 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme.Custom"
         tools:replace="android:supportsRtl">
+        <activity
+            android:name=".appUi.WifiScreen"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name=".irtv.TCLRemote"
@@ -44,49 +50,42 @@
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.LgWifiRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".appUi.PermActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.Roku_Remote"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.Tv_list"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.Roku_Apps"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.RokuPair"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.RemoteActivity"
             android:configChanges="orientation"
@@ -94,7 +93,6 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".appUi.FirstActivity"
             android:configChanges="orientation"
@@ -102,7 +100,6 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.StartingScreen"
             android:configChanges="orientation"
@@ -115,98 +112,84 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- //Ir activities -->
-
         <activity
             android:name=".activitiesUi.ir.MitsubishiRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.PhilipsActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.InsigniaRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.HaireRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.ZenithActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.HitachiRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.ToshibaRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.JVCRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.RokuRemote"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".irtv.SonyRemote"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.PanasonicRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.RemoteNameActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".irtv.SamsungRemoteActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activitiesUi.ir.LGIRRemoteActivity"
             android:configChanges="orientation"
@@ -221,19 +204,15 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3043189731871157~5024379433" />
-
         <meta-data
             android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
             android:value="true" />
-
         <meta-data
             android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
             android:value="true" />
-
     </application>
 
 </manifest>

@@ -110,7 +110,7 @@ public class DeviceFragment extends Fragment {
 
         View inflate = layoutInflater.inflate(R.layout.fragment_device, viewGroup, false);
         this.devices_list = (ListView) inflate.findViewById(R.id.smart_tvs_list);
-        this.progress = inflate.findViewById(R.id.progress);
+        this.progress = inflate.findViewById(R.id.progressRoot);
         this.devices_list.setAdapter((ListAdapter) this.hubAdapter);
         this.devices_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
