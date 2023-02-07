@@ -1,100 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
     android:gravity="center"
-    android:layoutDirection="ltr"
-    android:layout_height="match_parent">
+    android:layoutDirection="ltr">
 
-   <RelativeLayout
-        android:gravity="center"
-        android:layout_marginRight="@dimen/_22sdp"
-        android:layout_gravity="center"
-        android:layout_marginStart="@dimen/_22sdp"
-        android:background="@drawable/connection_bg"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_190sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginLeft="@dimen/_22sdp"
         android:layout_marginEnd="@dimen/_22sdp"
-        android:layout_marginLeft="@dimen/_22sdp">
+        android:layout_marginRight="@dimen/_22sdp"
+        android:background="@drawable/connection_bg"
+        android:gravity="center">
 
-       <TextView
-           android:id="@+id/pair_dialog"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_alignParentTop="true"
-           android:layout_centerInParent="true"
-           android:layout_marginBottom="@dimen/_15sdp"
-           android:fontFamily="@font/roboto"
-           android:gravity="center"
-           android:text="@string/pair_your_tv"
-           android:textColor="@color/white"
-           android:textStyle="bold" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_2sdp"
-        android:layout_below="@+id/pair_dialog"
-        android:background="#20ffffff"/>
-
-
-       <EditText
-           android:id="@+id/txt_pair"
-           android:layout_width="@dimen/_128sdp"
-           android:layout_height="@dimen/_50sdp"
-           android:layout_below="@+id/view"
-           android:layout_centerHorizontal="true"
-           android:layout_marginTop="@dimen/_15sdp"
-           android:focusable="true"
-           android:focusableInTouchMode="true"
-           android:fontFamily="@font/roboto"
-           android:gravity="center"
-           android:hint="@string/enter_code"
-           android:textColor="@color/white"
-           android:textColorHint="#cccccc"
-           android:textCursorDrawable="@drawable/cursor"
-           android:textStyle="bold">
-
-           <requestFocus />
-
-       </EditText>
-
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_28sdp"
-        android:layout_below="@+id/txt_pair"
-        android:layout_centerHorizontal="true">
-
-        <Button
-            android:id="@+id/btn_pCancel"
-            android:background="@drawable/dis_bg"
-            android:layout_width="@dimen/_100sdp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_height="@dimen/_32sdp"
+        <TextView
+            android:id="@+id/pair_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_15sdp"
             android:fontFamily="@font/roboto"
-            android:textAllCaps="false"
-            android:text="@string/cancel"
-            android:singleLine="true" />
+            android:gravity="center"
+            android:text="@string/pair_your_tv"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btn_pair"
-            android:background="@drawable/dis_bg"
-            android:layout_width="@dimen/_100sdp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textAllCaps="false"
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/pair_dialog"
+            android:background="#20ffffff" />
+
+        <EditText
+            android:id="@+id/txt_pair"
+            android:layout_width="@dimen/_128sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:fontFamily="@font/roboto"
-            android:layout_height="@dimen/_32sdp"
-            android:text="@string/pair"
-            android:singleLine="true"
-            android:layout_marginStart="@dimen/_40sdp" />
+            android:gravity="center"
+            android:hint="@string/enter_code"
+            android:textColor="@color/white"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textStyle="bold">
 
-    </LinearLayout>
-</RelativeLayout>
+            <requestFocus />
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pair"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pCancel"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@drawable/dis_bg"
+                android:fontFamily="@font/roboto"
+                android:singleLine="true"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pair_view"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:background="@drawable/dis_bg"
+                android:fontFamily="@font/roboto"
+                android:singleLine="true"
+                android:text="@string/pair"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

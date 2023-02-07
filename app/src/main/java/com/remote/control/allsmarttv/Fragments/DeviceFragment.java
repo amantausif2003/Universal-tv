@@ -61,6 +61,7 @@ public class DeviceFragment extends Fragment {
             return this.mCollator.compare(devicesInfoUtil.getName(), devicesInfoUtil2.getName());
         }
     };
+
     private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
 
         @RequiresApi(api = Build.VERSION_CODES.KITKAT)

@@ -62,7 +62,7 @@ public class PairingFragment extends Fragment {
             }
         });
 
-        this.btn_pair = (Button) this.pair_view.findViewById(R.id.btn_pair);
+        this.btn_pair = (Button) this.pair_view.findViewById(R.id.pair_view);
         this.btn_pair.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
