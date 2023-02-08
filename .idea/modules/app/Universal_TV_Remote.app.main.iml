@@ -39,7 +39,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1b44060a29149e4e4a91e83ba814d4ac/transformed/jetified-kotlin-parcelize-runtime-1.7.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/2d69b80a9d9d5e6740a49078733662db/transformed/jetified-core-ktx-1.7.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e6465f97e286d0c94078bb7df028ee67/transformed/material-1.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3f84e5ab360a7058fa1d8d27f4e241e0/transformed/jetified-connect-sdk-android-lite-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/635ca5e42cc8614b7e82fd391aa50bcf/transformed/jetified-connect-sdk-android-lite-1.6.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/f3fafc2b2b5081befdc3fd7707bd651d/transformed/jetified-easypermissions-3.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/bcc9a47cbdf1f3f09dfd481172e3bb54/transformed/appcompat-1.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3781d78b3f54e330ea317d73a2b2d0f6/transformed/jetified-appcompat-resources-1.4.2-api.jar</arg>
@@ -145,7 +145,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0474c1167c41a2a296448806ebe426e4/transformed/jetified-javax.inject-1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b96e5d6b8279d69fafd490765523e7cd/transformed/jetified-error_prone_annotations-2.9.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/33d273fb5e0ec1ef7e294cdf0b9e0ecf/transformed/jetified-android-gif-drawable-1.2.23-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2b02b1be902f1333106763cc31c2d7a3/transformed/jetified-networkmanager-0.0.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5050b66b02545d3090a2df45066069b1/transformed/jetified-networkmanager-0.0.2-api.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-32/android.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -157,7 +157,6 @@
             <stringArg name="languageVersion" arg="1.7" />
           </stringArguments>
           <arrayArguments>
-            <arrayArg name="friendPaths" />
             <arrayArg name="pluginClasspaths">
               <args>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-compiler/1.7.20/8f58ba09195f21393167e73936754da46a7f56a4/kotlin-parcelize-compiler-1.7.20.jar</arg>

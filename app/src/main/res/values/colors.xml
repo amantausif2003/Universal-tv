@@ -27,5 +27,8 @@
     <color name="black">@android:color/black</color>
     <color name="transparent">@android:color/transparent</color>
 
+    <color name="proText">#CE9646</color>
+    <color name="txt_bg">#D95C00</color>
+    <color name="Gold">#FFAF2E</color>
 
 </resources>

@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/415ec8e14f86200d603efe84ed103af0/transformed/jetified-firebase-config-ktx-21.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/415ec8e14f86200d603efe84ed103af0/transformed/jetified-firebase-config-ktx-21.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/415ec8e14f86200d603efe84ed103af0/transformed/jetified-firebase-config-ktx-21.2.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-config-ktx/21.2.1/ae05811dac1262d898af8d409e41ab0dc60e5082/firebase-config-ktx-21.2.1-javadoc.jar!/" />

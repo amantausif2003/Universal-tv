@@ -23,6 +23,18 @@
             ads:layout_constraintTop_toTopOf="parent">
 
             <ImageView
+                android:id="@+id/connectivityInfo"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintEnd_toStartOf="@+id/language"
+                ads:layout_constraintTop_toTopOf="parent"
+                ads:srcCompat="@drawable/eye_btn" />
+
+            <ImageView
                 android:id="@+id/menuBtn"
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="@dimen/_30sdp"
@@ -37,14 +49,14 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:fontFamily="@font/roboto"
                 android:text="@string/universal_tv_remote"
                 android:textColor="@color/colorOnPrimary"
                 android:textSize="@dimen/_15sdp"
                 android:textStyle="bold"
                 ads:layout_constraintBottom_toBottomOf="parent"
-                ads:layout_constraintEnd_toEndOf="parent"
-                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintStart_toEndOf="@+id/menuBtn"
                 ads:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
@@ -275,25 +287,47 @@
                         app:cardCornerRadius="@dimen/_12sdp">
 
 
-                        <LinearLayout
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/linearLayout3"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_110sdp"
                             android:layout_gravity="center"
-                            android:background="@drawable/ir_menu_background"
                             android:gravity="center"
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="IR"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_50sdp"
+                                android:textStyle="bold"
+                                ads:layout_constraintEnd_toEndOf="parent"
+                                ads:layout_constraintHorizontal_bias="0.5"
+                                ads:layout_constraintStart_toStartOf="parent"
+                                ads:layout_constraintTop_toTopOf="parent"
+                                tools:layout_conversion_absoluteHeight="87dp"
+                                tools:layout_conversion_absoluteWidth="58dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto"
                                 android:text="@string/ir_remotes_for_all_tv"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_11sdp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                ads:layout_constraintEnd_toEndOf="parent"
+                                ads:layout_constraintHorizontal_bias="0.5"
+                                ads:layout_constraintStart_toStartOf="parent"
+                                ads:layout_constraintTop_toBottomOf="@+id/textView10"
+                                tools:layout_conversion_absoluteHeight="20dp"
+                                tools:layout_conversion_absoluteWidth="139dp" />
 
-                        </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.cardview.widget.CardView>
 
@@ -308,26 +342,39 @@
                         app:cardCornerRadius="@dimen/_12sdp">
 
 
-                        <LinearLayout
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/linearLayout2"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_110sdp"
                             android:layout_gravity="center"
-                            android:background="@drawable/android"
-                            android:gravity="center"
-                            android:orientation="vertical">
+                            android:gravity="center">
 
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="16dp"
+                                ads:layout_constraintEnd_toEndOf="parent"
+                                ads:layout_constraintStart_toStartOf="parent"
+                                ads:layout_constraintTop_toTopOf="parent"
+                                ads:srcCompat="@drawable/wifi_icon" />
 
                             <TextView
+                                android:id="@+id/textView6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_30sdp"
                                 android:fontFamily="@font/roboto"
-                                android:text="@string/android_tv"
+                                android:text="Wi-Fi TV"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_9sdp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                ads:layout_constraintEnd_toEndOf="parent"
+                                ads:layout_constraintStart_toEndOf="parent"
+                                ads:layout_constraintStart_toStartOf="parent"
+                                ads:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-                        </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.cardview.widget.CardView>
 

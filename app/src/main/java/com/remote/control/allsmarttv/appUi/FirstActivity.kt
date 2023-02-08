@@ -31,6 +31,7 @@ import com.remote.control.allsmarttv.adManager.AdManager.isInterstialLoaded
 import com.remote.control.allsmarttv.adManager.AdManager.loadInterstitialAd
 import com.remote.control.allsmarttv.adManager.AdManager.showInterstitial
 import com.remote.control.allsmarttv.databinding.ActivityMainBinding
+import com.remote.control.allsmarttv.dialog.ConnectivityDialog
 import com.remote.control.allsmarttv.irtv.TCLRemote
 import com.remote.control.allsmarttv.utils.Util
 import com.remote.control.allsmarttv.utils.Util.showToast
@@ -39,12 +40,19 @@ class FirstActivity : AppCompatActivity(), CallBackInterstitial {
 
     private var isBtnClicked = 0
     private lateinit var mainBinding: ActivityMainBinding
+    private var connectivityDialog: ConnectivityDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         SupportedClass.loadLangLocale(baseContext)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
+
+        connectivityDialog = ConnectivityDialog(this@FirstActivity)
+
+        mainBinding.connectivityInfo.setOnClickListener {
+            connectivityDialog?.showDialog()
+        }
 
         mainBinding.menuBtn.setOnClickListener {
             mainBinding.drawerLayout.openDrawer(GravityCompat.START)

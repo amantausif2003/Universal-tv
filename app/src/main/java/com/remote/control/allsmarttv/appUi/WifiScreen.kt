@@ -7,18 +7,14 @@ import android.os.Handler
 import android.os.IBinder
 import android.os.Looper
 import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
 import android.view.inputmethod.CompletionInfo
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.ExtractedText
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import com.remote.control.allsmarttv.R
 import com.remote.control.allsmarttv.adapter.SearchingTvAdapter
 import com.remote.control.allsmarttv.databinding.ActivityWifiScreenBinding
+import com.remote.control.allsmarttv.dialog.ConnectivityDialog
 import com.remote.control.allsmarttv.dialog.NewPairDialog
 import com.remote.control.allsmarttv.utils.*
 import java.text.Collator
@@ -68,6 +64,7 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
     private var searchingTvAdapter: SearchingTvAdapter? = SearchingTvAdapter(this)
 
     private var newPairDialog: NewPairDialog? = null
+    private var connectivityDialog: ConnectivityDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -83,7 +80,7 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
 
                 override fun yesPair(string: String?) {
                     if (string != null) {
-                        clientService!!.setPairingSecret(string)
+                        clientService?.setPairingSecret(string)
                     } else {
                         Util.showToast(this@WifiScreen, "Enter null Code")
                     }
@@ -95,6 +92,8 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
 
             })
 
+        connectivityDialog = ConnectivityDialog(this@WifiScreen)
+
     }
 
     private fun setUpListOfDevices() {
@@ -103,6 +102,10 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
     }
 
     private fun setUpUiClick() {
+
+        mainBinding.connectivityInfo.setOnClickListener {
+            connectivityDialog?.showDialog()
+        }
 
         mainBinding.btnConnect.setOnClickListener {
             startClientListenerService()
@@ -269,11 +272,11 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
 
     private val serviceConnection: ServiceConnection = object : ServiceConnection {
         override fun onServiceDisconnected(componentName: ComponentName) {
-            Log.d("myRemovte", "onServiceDisconnected")
+            Log.d("myRemote", "onServiceDisconnected")
         }
 
         override fun onServiceConnected(componentName: ComponentName, iBinder: IBinder) {
-            Log.d("myRemovte", "onServiceConnected")
+            Log.d("myRemote", "onServiceConnected")
             clientService = (iBinder as ClientService.LocalBinder).service
             clientService?.setRemoteListener(clientListener)
             onRemoteListener = clientService
@@ -290,19 +293,20 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
         }
 
         override fun onConnected(device: Device) {
+            configured = true
             Log.d("myClientListener", "onConnected")
             mainBinding.searchTvRoot.visibility = View.GONE
-            mainBinding.removeUiRoot.visibility = View.VISIBLE
+            mainBinding.remoteUiRoot.visibility = View.VISIBLE
         }
 
         override fun onConnectFailed(device: Device) {
-            forgetDevice()
-            Log.d("myClientListener", "onConnected")
+//            forgetDevice()
+            Log.d("myClientListener", "onConnectFailed")
         }
 
         override fun onDisconnected(device: Device) {
             configured = false
-            Log.d("myClientListener", "onConnected")
+            Log.d("myClientListener", "onDisconnected")
         }
 
         override fun onPairingRequired(device: Device) {
@@ -399,8 +403,17 @@ class WifiScreen : AppCompatActivity(), SearchingTvAdapter.SearchingTvAdapterCal
     }
 
     override fun selectTv(itemPosition: Int) {
-
         startClientListenerService()
+    }
 
+    fun showRemoteUi() {
+        mainBinding.searchTvRoot.visibility = View.GONE
+        mainBinding.progressRoot.visibility = View.GONE
+        mainBinding.remoteUiRoot.visibility = View.VISIBLE
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        forgetDevice()
     }
 }

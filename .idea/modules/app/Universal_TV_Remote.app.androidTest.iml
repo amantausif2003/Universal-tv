@@ -46,7 +46,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8743a70d68f83ef82d8c14a9aabbdf21/transformed/jetified-kotlin-stdlib-jdk7-1.7.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e3ba1dd3229e86d9829eaf65fb9e71d8/transformed/jetified-kotlin-android-extensions-runtime-1.7.20.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e6465f97e286d0c94078bb7df028ee67/transformed/material-1.6.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3f84e5ab360a7058fa1d8d27f4e241e0/transformed/jetified-connect-sdk-android-lite-1.6.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/635ca5e42cc8614b7e82fd391aa50bcf/transformed/jetified-connect-sdk-android-lite-1.6.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/f3fafc2b2b5081befdc3fd7707bd651d/transformed/jetified-easypermissions-3.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/bcc9a47cbdf1f3f09dfd481172e3bb54/transformed/appcompat-1.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3781d78b3f54e330ea317d73a2b2d0f6/transformed/jetified-appcompat-resources-1.4.2-api.jar</arg>
@@ -137,7 +137,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/d2d1f393af2a33187867848c524d0f11/transformed/jetified-sdp-android-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/ecce3ab812399a873b86670736b82d2b/transformed/multidex-2.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/33d273fb5e0ec1ef7e294cdf0b9e0ecf/transformed/jetified-android-gif-drawable-1.2.23-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2b02b1be902f1333106763cc31c2d7a3/transformed/jetified-networkmanager-0.0.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5050b66b02545d3090a2df45066069b1/transformed/jetified-networkmanager-0.0.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/acfe0cd285d150ce77f351db8280a63f/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/bfe7a2db1e8e3c0b7320c14255999395/transformed/jetified-reactive-streams-1.0.2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/a10ede70a02d5f12a2051be9dc0d8d0b/transformed/jetified-firebase-annotations-16.2.0.jar</arg>
